@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'mainVFexoj.ui'
+## Form generated from reading UI file 'mainWKYRui.ui'
 ##
 ## Created by: Qt User Interface Compiler version 6.4.1
 ##
@@ -1094,19 +1094,19 @@ class Ui_MainWindow(object):
         self.pagina_Cantarrana.setObjectName(u"pagina_Cantarrana")
         self.tabCantarrana = QTabWidget(self.pagina_Cantarrana)
         self.tabCantarrana.setObjectName(u"tabCantarrana")
-        self.tabCantarrana.setGeometry(QRect(0, 0, 1131, 621))
+        self.tabCantarrana.setGeometry(QRect(0, 0, 1131, 611))
         sizePolicy6 = QSizePolicy(QSizePolicy.Minimum, QSizePolicy.Fixed)
         sizePolicy6.setHorizontalStretch(0)
         sizePolicy6.setVerticalStretch(0)
         sizePolicy6.setHeightForWidth(self.tabCantarrana.sizePolicy().hasHeightForWidth())
         self.tabCantarrana.setSizePolicy(sizePolicy6)
         self.tabCantarrana.setStyleSheet(u"font: 500 10pt \"Allerta\";\n"
-"color: rgb(79, 79, 79);")
+"color: rgb(79, 79, 79);background-color: rgb(255, 255, 255);")
         self.tabCantarrana.setTabPosition(QTabWidget.West)
         self.tabCantarrana.setTabsClosable(False)
         self.CantarranaEntrada = QWidget()
         self.CantarranaEntrada.setObjectName(u"CantarranaEntrada")
-        self.CantarranaEntrada.setStyleSheet(u"")
+        self.CantarranaEntrada.setStyleSheet(u"background-color: rgb(255, 255, 255);")
         self.EstacionLbl = QLineEdit(self.CantarranaEntrada)
         self.EstacionLbl.setObjectName(u"EstacionLbl")
         self.EstacionLbl.setGeometry(QRect(130, 100, 830, 2))
@@ -1178,16 +1178,6 @@ class Ui_MainWindow(object):
         self.gridLayout_143.setObjectName(u"gridLayout_143")
         self.gridLayout_143.setSizeConstraint(QLayout.SetNoConstraint)
         self.gridLayout_143.setContentsMargins(20, 5, 20, 5)
-        self.CantarranaBtnLbl_2 = QLabel(self.row_73)
-        self.CantarranaBtnLbl_2.setObjectName(u"CantarranaBtnLbl_2")
-        sizePolicy4.setHeightForWidth(self.CantarranaBtnLbl_2.sizePolicy().hasHeightForWidth())
-        self.CantarranaBtnLbl_2.setSizePolicy(sizePolicy4)
-        self.CantarranaBtnLbl_2.setStyleSheet(u"font: 650 12pt \"Allerta\";")
-        self.CantarranaBtnLbl_2.setLineWidth(1)
-        self.CantarranaBtnLbl_2.setAlignment(Qt.AlignLeading|Qt.AlignLeft|Qt.AlignVCenter)
-
-        self.gridLayout_143.addWidget(self.CantarranaBtnLbl_2, 1, 0, 1, 1)
-
         self.CantarranaBtnLbl = QLabel(self.row_73)
         self.CantarranaBtnLbl.setObjectName(u"CantarranaBtnLbl")
         sizePolicy4.setHeightForWidth(self.CantarranaBtnLbl.sizePolicy().hasHeightForWidth())
@@ -1197,6 +1187,16 @@ class Ui_MainWindow(object):
         self.CantarranaBtnLbl.setAlignment(Qt.AlignLeading|Qt.AlignLeft|Qt.AlignVCenter)
 
         self.gridLayout_143.addWidget(self.CantarranaBtnLbl, 0, 0, 1, 1)
+
+        self.CantarranaBtnLbl_2 = QLabel(self.row_73)
+        self.CantarranaBtnLbl_2.setObjectName(u"CantarranaBtnLbl_2")
+        sizePolicy4.setHeightForWidth(self.CantarranaBtnLbl_2.sizePolicy().hasHeightForWidth())
+        self.CantarranaBtnLbl_2.setSizePolicy(sizePolicy4)
+        self.CantarranaBtnLbl_2.setStyleSheet(u"font: 650 12pt \"Allerta\";")
+        self.CantarranaBtnLbl_2.setLineWidth(1)
+        self.CantarranaBtnLbl_2.setAlignment(Qt.AlignLeading|Qt.AlignLeft|Qt.AlignVCenter)
+
+        self.gridLayout_143.addWidget(self.CantarranaBtnLbl_2, 1, 0, 1, 1)
 
         self.CantarranaComboBoxIntervalo = QLineEdit(self.row_73)
         self.CantarranaComboBoxIntervalo.setObjectName(u"CantarranaComboBoxIntervalo")
@@ -1296,8 +1296,9 @@ class Ui_MainWindow(object):
 
         self.layoutWidget_10 = QWidget(self.CantarranaEntrada)
         self.layoutWidget_10.setObjectName(u"layoutWidget_10")
-        self.layoutWidget_10.setGeometry(QRect(360, 280, 502, 302))
+        self.layoutWidget_10.setGeometry(QRect(350, 300, 511, 272))
         self.horizontalLayout_156 = QHBoxLayout(self.layoutWidget_10)
+        self.horizontalLayout_156.setSpacing(0)
         self.horizontalLayout_156.setObjectName(u"horizontalLayout_156")
         self.horizontalLayout_156.setContentsMargins(0, 0, 0, 0)
         self.CantarranaGrafica = QPushButton(self.layoutWidget_10)
@@ -1305,9 +1306,10 @@ class Ui_MainWindow(object):
         self.CantarranaGrafica.setEnabled(False)
         sizePolicy5.setHeightForWidth(self.CantarranaGrafica.sizePolicy().hasHeightForWidth())
         self.CantarranaGrafica.setSizePolicy(sizePolicy5)
-        self.CantarranaGrafica.setMinimumSize(QSize(500, 300))
+        self.CantarranaGrafica.setMinimumSize(QSize(500, 270))
         self.CantarranaGrafica.setStyleSheet(u"background-color: rgb(255,255,255);\n"
-"border-image: url(:/curvasDuracion/images/curvasDuracion/Cantarrana_diario.jpg);")
+"border-color: rgb(255, 255, 255);\n"
+"border-image: url(:/images/images/images/Cantarrana_diario.png);")
         self.CantarranaGrafica.setFlat(True)
 
         self.horizontalLayout_156.addWidget(self.CantarranaGrafica)
@@ -1457,12 +1459,12 @@ class Ui_MainWindow(object):
         self.tabCantarrana.addTab(self.CantarranaEntrada, "")
         self.CantarranaResultados = QWidget()
         self.CantarranaResultados.setObjectName(u"CantarranaResultados")
+        self.CantarranaResultados.setStyleSheet(u"background-color: rgb(255, 255, 255);")
         self.CantarranaTabla = QTableWidget(self.CantarranaResultados)
         self.CantarranaTabla.setObjectName(u"CantarranaTabla")
         self.CantarranaTabla.setGeometry(QRect(30, 20, 780, 551))
         self.CantarranaTabla.setLayoutDirection(Qt.LeftToRight)
-        self.CantarranaTabla.setStyleSheet(u"color: rgb(255, 255, 255);\n"
-"StepsViewer::StepsViewer(QWidget *parent) : QTableWidget(parent)\n"
+        self.CantarranaTabla.setStyleSheet(u"StepsViewer::StepsViewer(QWidget *parent) : QTableWidget(parent)\n"
 "{\n"
 "setColumnCount(2);\n"
 "setColumnWidth(0, 300);\n"
@@ -1497,18 +1499,20 @@ class Ui_MainWindow(object):
         self.stackedWidget.addWidget(self.pagina_Cantarrana)
         self.pagina_Bosa = QWidget()
         self.pagina_Bosa.setObjectName(u"pagina_Bosa")
+        self.pagina_Bosa.setStyleSheet(u"")
         self.tabBosa = QTabWidget(self.pagina_Bosa)
         self.tabBosa.setObjectName(u"tabBosa")
         self.tabBosa.setGeometry(QRect(0, 0, 1131, 621))
         sizePolicy6.setHeightForWidth(self.tabBosa.sizePolicy().hasHeightForWidth())
         self.tabBosa.setSizePolicy(sizePolicy6)
         self.tabBosa.setStyleSheet(u"font: 500 10pt \"Allerta\";\n"
-"color: rgb(79, 79, 79);")
+"color: rgb(79, 79, 79);\n"
+"background-color: rgb(255, 255, 255);")
         self.tabBosa.setTabPosition(QTabWidget.West)
         self.tabBosa.setTabsClosable(False)
         self.BosaEntrada = QWidget()
         self.BosaEntrada.setObjectName(u"BosaEntrada")
-        self.BosaEntrada.setStyleSheet(u"")
+        self.BosaEntrada.setStyleSheet(u"background-color: rgb(255, 255, 255);")
         self.EstacionLbl_7 = QLineEdit(self.BosaEntrada)
         self.EstacionLbl_7.setObjectName(u"EstacionLbl_7")
         self.EstacionLbl_7.setGeometry(QRect(130, 100, 830, 2))
@@ -1524,6 +1528,7 @@ class Ui_MainWindow(object):
         sizePolicy7.setHeightForWidth(self.EstacionLbl_8.sizePolicy().hasHeightForWidth())
         self.EstacionLbl_8.setSizePolicy(sizePolicy7)
         self.EstacionLbl_8.setStyleSheet(u"font: 650 25pt \"Allerta\";\n"
+"background-color: rgb(255, 255, 255);\n"
 "")
         self.EstacionLbl_8.setLineWidth(1)
         self.EstacionLbl_8.setAlignment(Qt.AlignCenter)
@@ -1837,7 +1842,7 @@ class Ui_MainWindow(object):
 
         self.layoutWidget_12 = QWidget(self.BosaEntrada)
         self.layoutWidget_12.setObjectName(u"layoutWidget_12")
-        self.layoutWidget_12.setGeometry(QRect(360, 280, 502, 302))
+        self.layoutWidget_12.setGeometry(QRect(350, 300, 502, 272))
         self.horizontalLayout_157 = QHBoxLayout(self.layoutWidget_12)
         self.horizontalLayout_157.setObjectName(u"horizontalLayout_157")
         self.horizontalLayout_157.setContentsMargins(0, 0, 0, 0)
@@ -1846,10 +1851,10 @@ class Ui_MainWindow(object):
         self.BosaGrafica.setEnabled(False)
         sizePolicy5.setHeightForWidth(self.BosaGrafica.sizePolicy().hasHeightForWidth())
         self.BosaGrafica.setSizePolicy(sizePolicy5)
-        self.BosaGrafica.setMinimumSize(QSize(500, 300))
+        self.BosaGrafica.setMinimumSize(QSize(500, 270))
         self.BosaGrafica.setStyleSheet(u"background-color: rgb(255,255,255);\n"
-"border-image: url(:/curvasDuracion/images/curvasDuracion/Bosa_diario.jpg);\n"
-"")
+"border-color: rgb(255, 255, 255);\n"
+"border-image: url(:/images/images/images/Bosa_diario.png);")
         self.BosaGrafica.setFlat(True)
 
         self.horizontalLayout_157.addWidget(self.BosaGrafica)
@@ -1857,12 +1862,12 @@ class Ui_MainWindow(object):
         self.tabBosa.addTab(self.BosaEntrada, "")
         self.BosaResultados = QWidget()
         self.BosaResultados.setObjectName(u"BosaResultados")
+        self.BosaResultados.setStyleSheet(u"background-color: rgb(255, 255, 255);")
         self.BosaTabla = QTableWidget(self.BosaResultados)
         self.BosaTabla.setObjectName(u"BosaTabla")
         self.BosaTabla.setGeometry(QRect(30, 20, 780, 551))
         self.BosaTabla.setMinimumSize(QSize(780, 0))
-        self.BosaTabla.setStyleSheet(u"color: rgb(255, 255, 255);\n"
-"StepsViewer::StepsViewer(QWidget *parent) : QTableWidget(parent)\n"
+        self.BosaTabla.setStyleSheet(u"StepsViewer::StepsViewer(QWidget *parent) : QTableWidget(parent)\n"
 "{\n"
 "setColumnCount(2);\n"
 "setColumnWidth(0, 300);\n"
@@ -2024,7 +2029,7 @@ class Ui_MainWindow(object):
 
         self.retranslateUi(MainWindow)
 
-        self.stackedWidget.setCurrentIndex(1)
+        self.stackedWidget.setCurrentIndex(3)
         self.tabCantarrana.setCurrentIndex(0)
         self.tabBosa.setCurrentIndex(0)
 
@@ -2171,8 +2176,8 @@ class Ui_MainWindow(object):
         self.EstacionLbl_2.setText("")
         self.EstacionLbl_2.setPlaceholderText("")
         self.groupBox_Propiedades_45.setTitle(QCoreApplication.translate("MainWindow", u"Criterios", None))
-        self.CantarranaBtnLbl_2.setText(QCoreApplication.translate("MainWindow", u"N\u00famero de intervalos de frecuencia", None))
         self.CantarranaBtnLbl.setText(QCoreApplication.translate("MainWindow", u"Nivel de agregaci\u00f3n", None))
+        self.CantarranaBtnLbl_2.setText(QCoreApplication.translate("MainWindow", u"N\u00famero de intervalos de frecuencia", None))
 #if QT_CONFIG(whatsthis)
         self.CantarranaComboBoxIntervalo.setWhatsThis("")
 #endif // QT_CONFIG(whatsthis)

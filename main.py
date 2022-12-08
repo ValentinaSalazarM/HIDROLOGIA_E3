@@ -44,8 +44,8 @@ class MainWindow(QMainWindow):
         # ///////////////////////////////////////////////////////////////
         Settings.ENABLE_CUSTOM_TITLE_BAR = True
 
-        title = "Tratamiento de Aguas Residuales"
-        description = "Selección de tecnologías de tratamiento"
+        title = "Hidrología"
+        description = "Curvas de duración de caudales"
 
         self.setWindowTitle(title)
         widgets.titleRightInfo.setText(description)
@@ -141,17 +141,17 @@ class MainWindow(QMainWindow):
                 item = QTableWidgetItem(str(consolidado.iat[i,j]))
                 item.setTextAlignment(Qt.AlignHCenter)
                 widgets.CantarranaTabla.setItem(i,j, item)
+
         if nivelAgregacion == "Diario":
-            widgets.CantarranaGrafica.setStyleSheet(u"background-image: url(:images/curvasDuracion/Cantarrana_diario.jpg);")
+            widgets.CantarranaGrafica.setStyleSheet(u"border-image: url(:/images/images/images/Cantarrana_diario.png);")
         elif nivelAgregacion == "Semanal":
-            widgets.CantarranaGrafica.setStyleSheet(u"background-image: url(:images/curvasDuracion/Cantarrana_semanal.jpg);")
+            widgets.CantarranaGrafica.setStyleSheet(u"border-image: url(:/images/images/images/Cantarrana_semanal.png);")
         elif nivelAgregacion == "Decadal":
-            widgets.CantarranaGrafica.setStyleSheet(u"background-image: url(:images/curvasDuracion/Cantarrana_decadal.jpg);")
+            widgets.CantarranaGrafica.setStyleSheet(u"border-image: url(:/images/images/images/Cantarrana_decadal.png);")
         elif nivelAgregacion == "Quincenal":
-            widgets.CantarranaGrafica.setStyleSheet(u"background-image: url(:images/curvasDuracion/Cantarrana_quincenal.jpg);")
+            widgets.CantarranaGrafica.setStyleSheet(u"border-image: url(:/images/images/images/Cantarrana_quincenal.png);")
         elif nivelAgregacion == "Mensual":
-            widgets.CantarranaGrafica.setStyleSheet(u"background-image: url(:images/curvasDuracion/Cantarrana_mensual.jpg);")
-        
+            widgets.CantarranaGrafica.setStyleSheet(u"border-image: url(:/images/images/images/Cantarrana_mensual.png);")    
 
     def calcularBosa (self):
         global ultimoConsolidado
@@ -178,16 +178,16 @@ class MainWindow(QMainWindow):
                 item.setTextAlignment(Qt.AlignHCenter)
                 widgets.BosaTabla.setItem(i,j, item)
 
-        if nivelAgregacion == "diario":
-            widgets.BosaGrafica.setStyleSheet(u"background-image: url(:/curvasDuracion/images/curvasDuracion/Bosa_diario.jpg);")
-        elif nivelAgregacion == "semanal":
-            widgets.BosaGrafica.setStyleSheet(u"background-image: url(:/curvasDuracion/images/curvasDuracion/Bosa_semanal.jpg);")
-        elif nivelAgregacion == "decadal":
-            widgets.BosaGrafica.setStyleSheet(u"background-image: url(:/curvasDuracion/images/curvasDuracion/Bosa_decadal.jpg);")
-        elif nivelAgregacion == "quincenal":
-            widgets.BosaGrafica.setStyleSheet(u"background-image: url(:/curvasDuracion/images/curvasDuracion/Bosa_quincenal.jpg);")
-        elif nivelAgregacion == "mensual":
-            widgets.BosaGrafica.setStyleSheet(u"background-image: url(:/curvasDuracion/images/curvasDuracion/Bosa_mensual.jpg);")
+        if nivelAgregacion == "Diario":
+            widgets.BosaGrafica.setStyleSheet(u"border-image: url(:/images/images/images/Bosa_diario.png);")
+        elif nivelAgregacion == "Semanal":
+            widgets.BosaGrafica.setStyleSheet(u"border-image: url(:/images/images/images/Bosa_semanal.png);")
+        elif nivelAgregacion == "Decadal":
+            widgets.BosaGrafica.setStyleSheet(u"border-image: url(:/images/images/images/Bosa_decadal.png);")
+        elif nivelAgregacion == "Quincenal":
+            widgets.BosaGrafica.setStyleSheet(u"border-image: url(:/images/images/images/Bosa_quincenal.png);")
+        elif nivelAgregacion == "Mensual":
+            widgets.BosaGrafica.setStyleSheet(u"border-image: url(:/images/images/images/Bosa_mensual.png);")
     
     def descargarGraficaCantarrana (self):
         ruta = self.solicitarRuta ()

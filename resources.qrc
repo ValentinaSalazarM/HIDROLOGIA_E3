@@ -1,20 +1,17 @@
 <RCC>
   <qresource prefix="images">
+    <file>images/images/Bosa_decadal.png</file>
+    <file>images/images/Bosa_diario.png</file>
+    <file>images/images/Bosa_mensual.png</file>
+    <file>images/images/Bosa_quincenal.png</file>
+    <file>images/images/Bosa_semanal.png</file>
+    <file>images/images/Cantarrana_decadal.png</file>
+    <file>images/images/Cantarrana_diario.png</file>
+    <file>images/images/Cantarrana_mensual.png</file>
+    <file>images/images/Cantarrana_quincenal.png</file>
+    <file>images/images/Cantarrana_semanal.png</file>
     <file>images/images/HidrappVertical.png</file>
     <file>images/images/LogoHome.png</file>
-    <file>images/images/wave.png</file>
-  </qresource>
-  <qresource prefix="curvasDuracion">
-    <file>images/curvasDuracion/Bosa_decadal.jpg</file>
-    <file>images/curvasDuracion/Bosa_diario.jpg</file>
-    <file>images/curvasDuracion/Bosa_mensual.jpg</file>
-    <file>images/curvasDuracion/Bosa_quincenal.jpg</file>
-    <file>images/curvasDuracion/Bosa_semanal.jpg</file>
-    <file>images/curvasDuracion/Cantarrana_decadal.jpg</file>
-    <file>images/curvasDuracion/Cantarrana_diario.jpg</file>
-    <file>images/curvasDuracion/Cantarrana_mensual.jpg</file>
-    <file>images/curvasDuracion/Cantarrana_quincenal.jpg</file>
-    <file>images/curvasDuracion/Cantarrana_semanal.jpg</file>
   </qresource>
   <qresource prefix="icons">
     <file>images/icons/cil-3d.png</file>

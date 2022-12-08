@@ -1710,7 +1710,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
                       <number>-2</number>
                      </property>
                      <property name="currentIndex">
-                      <number>1</number>
+                      <number>3</number>
                      </property>
                      <widget class="QWidget" name="home">
                       <property name="styleSheet">
@@ -2076,7 +2076,7 @@ font: 900 60pt&quot;Market Deco&quot;;</string>
                          <x>0</x>
                          <y>0</y>
                          <width>1131</width>
-                         <height>621</height>
+                         <height>611</height>
                         </rect>
                        </property>
                        <property name="sizePolicy">
@@ -2087,7 +2087,7 @@ font: 900 60pt&quot;Market Deco&quot;;</string>
                        </property>
                        <property name="styleSheet">
                         <string notr="true">font: 500 10pt &quot;Allerta&quot;;
-color: rgb(79, 79, 79);</string>
+color: rgb(79, 79, 79);background-color: rgb(255, 255, 255);</string>
                        </property>
                        <property name="tabPosition">
                         <enum>QTabWidget::West</enum>
@@ -2100,7 +2100,7 @@ color: rgb(79, 79, 79);</string>
                        </property>
                        <widget class="QWidget" name="CantarranaEntrada">
                         <property name="styleSheet">
-                         <string notr="true"/>
+                         <string notr="true">background-color: rgb(255, 255, 255);</string>
                         </property>
                         <attribute name="title">
                          <string>Entrada</string>
@@ -2330,28 +2330,6 @@ QGroupBox::title {
                                <property name="spacing">
                                 <number>20</number>
                                </property>
-                               <item row="1" column="0">
-                                <widget class="QLabel" name="CantarranaBtnLbl_2">
-                                 <property name="sizePolicy">
-                                  <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
-                                   <horstretch>0</horstretch>
-                                   <verstretch>0</verstretch>
-                                  </sizepolicy>
-                                 </property>
-                                 <property name="styleSheet">
-                                  <string notr="true">font: 650 12pt &quot;Allerta&quot;;</string>
-                                 </property>
-                                 <property name="lineWidth">
-                                  <number>1</number>
-                                 </property>
-                                 <property name="text">
-                                  <string>Número de intervalos de frecuencia</string>
-                                 </property>
-                                 <property name="alignment">
-                                  <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
-                                 </property>
-                                </widget>
-                               </item>
                                <item row="0" column="0">
                                 <widget class="QLabel" name="CantarranaBtnLbl">
                                  <property name="sizePolicy">
@@ -2368,6 +2346,28 @@ QGroupBox::title {
                                  </property>
                                  <property name="text">
                                   <string>Nivel de agregación</string>
+                                 </property>
+                                 <property name="alignment">
+                                  <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+                                 </property>
+                                </widget>
+                               </item>
+                               <item row="1" column="0">
+                                <widget class="QLabel" name="CantarranaBtnLbl_2">
+                                 <property name="sizePolicy">
+                                  <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+                                   <horstretch>0</horstretch>
+                                   <verstretch>0</verstretch>
+                                  </sizepolicy>
+                                 </property>
+                                 <property name="styleSheet">
+                                  <string notr="true">font: 650 12pt &quot;Allerta&quot;;</string>
+                                 </property>
+                                 <property name="lineWidth">
+                                  <number>1</number>
+                                 </property>
+                                 <property name="text">
+                                  <string>Número de intervalos de frecuencia</string>
                                  </property>
                                  <property name="alignment">
                                   <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
@@ -2579,13 +2579,16 @@ QPushButton:hover:!pressed
                         <widget class="QWidget" name="layoutWidget_10">
                          <property name="geometry">
                           <rect>
-                           <x>360</x>
-                           <y>280</y>
-                           <width>502</width>
-                           <height>302</height>
+                           <x>350</x>
+                           <y>300</y>
+                           <width>511</width>
+                           <height>272</height>
                           </rect>
                          </property>
                          <layout class="QHBoxLayout" name="horizontalLayout_156">
+                          <property name="spacing">
+                           <number>0</number>
+                          </property>
                           <item>
                            <widget class="QPushButton" name="CantarranaGrafica">
                             <property name="enabled">
@@ -2600,12 +2603,13 @@ QPushButton:hover:!pressed
                             <property name="minimumSize">
                              <size>
                               <width>500</width>
-                              <height>300</height>
+                              <height>270</height>
                              </size>
                             </property>
                             <property name="styleSheet">
                              <string notr="true">background-color: rgb(255,255,255);
-border-image: url(:/curvasDuracion/images/curvasDuracion/Cantarrana_diario.jpg);</string>
+border-color: rgb(255, 255, 255);
+border-image: url(:/images/images/images/Cantarrana_diario.png);</string>
                             </property>
                             <property name="text">
                              <string/>
@@ -3001,6 +3005,9 @@ font: 550 11pt &quot;Allerta&quot;;</string>
                         </widget>
                        </widget>
                        <widget class="QWidget" name="CantarranaResultados">
+                        <property name="styleSheet">
+                         <string notr="true">background-color: rgb(255, 255, 255);</string>
+                        </property>
                         <attribute name="title">
                          <string>Resultados</string>
                         </attribute>
@@ -3017,8 +3024,7 @@ font: 550 11pt &quot;Allerta&quot;;</string>
                           <enum>Qt::LeftToRight</enum>
                          </property>
                          <property name="styleSheet">
-                          <string notr="true">color: rgb(255, 255, 255);
-StepsViewer::StepsViewer(QWidget *parent) : QTableWidget(parent)
+                          <string notr="true">StepsViewer::StepsViewer(QWidget *parent) : QTableWidget(parent)
 {
 setColumnCount(2);
 setColumnWidth(0, 300);
@@ -3093,6 +3099,9 @@ font: 700 11pt &quot;Allerta&quot;;
                       </widget>
                      </widget>
                      <widget class="QWidget" name="pagina_Bosa">
+                      <property name="styleSheet">
+                       <string notr="true"/>
+                      </property>
                       <widget class="QTabWidget" name="tabBosa">
                        <property name="geometry">
                         <rect>
@@ -3110,7 +3119,8 @@ font: 700 11pt &quot;Allerta&quot;;
                        </property>
                        <property name="styleSheet">
                         <string notr="true">font: 500 10pt &quot;Allerta&quot;;
-color: rgb(79, 79, 79);</string>
+color: rgb(79, 79, 79);
+background-color: rgb(255, 255, 255);</string>
                        </property>
                        <property name="tabPosition">
                         <enum>QTabWidget::West</enum>
@@ -3123,7 +3133,7 @@ color: rgb(79, 79, 79);</string>
                        </property>
                        <widget class="QWidget" name="BosaEntrada">
                         <property name="styleSheet">
-                         <string notr="true"/>
+                         <string notr="true">background-color: rgb(255, 255, 255);</string>
                         </property>
                         <attribute name="title">
                          <string>Entrada</string>
@@ -3193,6 +3203,7 @@ font: 550 11pt &quot;Allerta&quot;;</string>
                          </property>
                          <property name="styleSheet">
                           <string notr="true">font: 650 25pt &quot;Allerta&quot;;
+background-color: rgb(255, 255, 255);
 </string>
                          </property>
                          <property name="lineWidth">
@@ -3984,10 +3995,10 @@ font: 550 11pt &quot;Allerta&quot;;</string>
                         <widget class="QWidget" name="layoutWidget_12">
                          <property name="geometry">
                           <rect>
-                           <x>360</x>
-                           <y>280</y>
+                           <x>350</x>
+                           <y>300</y>
                            <width>502</width>
-                           <height>302</height>
+                           <height>272</height>
                           </rect>
                          </property>
                          <layout class="QHBoxLayout" name="horizontalLayout_157">
@@ -4005,13 +4016,13 @@ font: 550 11pt &quot;Allerta&quot;;</string>
                             <property name="minimumSize">
                              <size>
                               <width>500</width>
-                              <height>300</height>
+                              <height>270</height>
                              </size>
                             </property>
                             <property name="styleSheet">
                              <string notr="true">background-color: rgb(255,255,255);
-border-image: url(:/curvasDuracion/images/curvasDuracion/Bosa_diario.jpg);
-</string>
+border-color: rgb(255, 255, 255);
+border-image: url(:/images/images/images/Bosa_diario.png);</string>
                             </property>
                             <property name="text">
                              <string/>
@@ -4025,6 +4036,9 @@ border-image: url(:/curvasDuracion/images/curvasDuracion/Bosa_diario.jpg);
                         </widget>
                        </widget>
                        <widget class="QWidget" name="BosaResultados">
+                        <property name="styleSheet">
+                         <string notr="true">background-color: rgb(255, 255, 255);</string>
+                        </property>
                         <attribute name="title">
                          <string>Resultados</string>
                         </attribute>
@@ -4044,8 +4058,7 @@ border-image: url(:/curvasDuracion/images/curvasDuracion/Bosa_diario.jpg);
                           </size>
                          </property>
                          <property name="styleSheet">
-                          <string notr="true">color: rgb(255, 255, 255);
-StepsViewer::StepsViewer(QWidget *parent) : QTableWidget(parent)
+                          <string notr="true">StepsViewer::StepsViewer(QWidget *parent) : QTableWidget(parent)
 {
 setColumnCount(2);
 setColumnWidth(0, 300);
