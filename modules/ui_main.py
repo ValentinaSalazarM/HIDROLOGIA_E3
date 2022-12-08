@@ -1,29 +1,39 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'maingnxZcz.ui'
+## Form generated from reading UI file 'mainVFexoj.ui'
 ##
-## Created by: Qt User Interface Compiler version 6.0.2
+## Created by: Qt User Interface Compiler version 6.4.1
 ##
 ## WARNING! All changes made in this file will be lost when recompiling UI file!
 ################################################################################
 
-from PySide6.QtCore import *
-from PySide6.QtGui import *
-from PySide6.QtWidgets import *
-
-from . resources_rc import *
+from PySide6.QtCore import (QCoreApplication, QDate, QDateTime, QLocale,
+    QMetaObject, QObject, QPoint, QRect,
+    QSize, QTime, QUrl, Qt)
+from PySide6.QtGui import (QBrush, QColor, QConicalGradient, QCursor,
+    QFont, QFontDatabase, QGradient, QIcon,
+    QImage, QKeySequence, QLinearGradient, QPainter,
+    QPalette, QPixmap, QRadialGradient, QTransform)
+from PySide6.QtWidgets import (QAbstractScrollArea, QApplication, QComboBox, QFrame,
+    QGridLayout, QGroupBox, QHBoxLayout, QHeaderView,
+    QLabel, QLayout, QLineEdit, QMainWindow,
+    QPlainTextEdit, QPushButton, QSizePolicy, QStackedWidget,
+    QTabWidget, QTableWidget, QTableWidgetItem, QTextEdit,
+    QVBoxLayout, QWidget)
+import modules.resources_rc
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         if not MainWindow.objectName():
             MainWindow.setObjectName(u"MainWindow")
-        MainWindow.resize(1280, 720)
+        MainWindow.resize(1298, 813)
         MainWindow.setMinimumSize(QSize(940, 560))
+        MainWindow.setLayoutDirection(Qt.LeftToRight)
         self.styleSheet = QWidget(MainWindow)
         self.styleSheet.setObjectName(u"styleSheet")
         font = QFont()
-        font.setFamily(u"Segoe UI")
+        font.setFamilies([u"Segoe UI"])
         font.setPointSize(10)
         font.setBold(False)
         font.setItalic(False)
@@ -548,10 +558,10 @@ class Ui_MainWindow(object):
 "}\n"
 "\n"
 "")
-        self.appMargins = QVBoxLayout(self.styleSheet)
-        self.appMargins.setSpacing(0)
-        self.appMargins.setObjectName(u"appMargins")
-        self.appMargins.setContentsMargins(10, 10, 10, 10)
+        self.horizontalLayout_6 = QHBoxLayout(self.styleSheet)
+        self.horizontalLayout_6.setSpacing(0)
+        self.horizontalLayout_6.setObjectName(u"horizontalLayout_6")
+        self.horizontalLayout_6.setContentsMargins(10, 10, 10, 10)
         self.bgApp = QFrame(self.styleSheet)
         self.bgApp.setObjectName(u"bgApp")
         self.bgApp.setStyleSheet(u"")
@@ -579,16 +589,18 @@ class Ui_MainWindow(object):
         self.topLogoInfo.setFrameShadow(QFrame.Raised)
         self.topLogo = QFrame(self.topLogoInfo)
         self.topLogo.setObjectName(u"topLogo")
-        self.topLogo.setGeometry(QRect(10, 5, 42, 42))
+        self.topLogo.setEnabled(True)
+        self.topLogo.setGeometry(QRect(10, 0, 42, 42))
         self.topLogo.setMinimumSize(QSize(42, 42))
         self.topLogo.setMaximumSize(QSize(42, 42))
+        self.topLogo.setStyleSheet(u"border-image: url(:/images/images/images/wave.png);")
         self.topLogo.setFrameShape(QFrame.NoFrame)
         self.topLogo.setFrameShadow(QFrame.Raised)
         self.titleLeftApp = QLabel(self.topLogoInfo)
         self.titleLeftApp.setObjectName(u"titleLeftApp")
         self.titleLeftApp.setGeometry(QRect(70, 8, 160, 20))
         font1 = QFont()
-        font1.setFamily(u"Segoe UI Semibold")
+        font1.setFamilies([u"Segoe UI Semibold"])
         font1.setPointSize(12)
         font1.setBold(False)
         font1.setItalic(False)
@@ -599,7 +611,7 @@ class Ui_MainWindow(object):
         self.titleLeftDescription.setGeometry(QRect(70, 27, 160, 16))
         self.titleLeftDescription.setMaximumSize(QSize(16777215, 16))
         font2 = QFont()
-        font2.setFamily(u"Segoe UI")
+        font2.setFamilies([u"Segoe UI"])
         font2.setPointSize(8)
         font2.setBold(False)
         font2.setItalic(False)
@@ -663,18 +675,6 @@ class Ui_MainWindow(object):
 
         self.verticalLayout_8.addWidget(self.btn_home)
 
-        self.btn_widgets = QPushButton(self.topMenu)
-        self.btn_widgets.setObjectName(u"btn_widgets")
-        sizePolicy.setHeightForWidth(self.btn_widgets.sizePolicy().hasHeightForWidth())
-        self.btn_widgets.setSizePolicy(sizePolicy)
-        self.btn_widgets.setMinimumSize(QSize(0, 45))
-        self.btn_widgets.setFont(font)
-        self.btn_widgets.setCursor(QCursor(Qt.PointingHandCursor))
-        self.btn_widgets.setLayoutDirection(Qt.LeftToRight)
-        self.btn_widgets.setStyleSheet(u"background-image: url(:/icons/images/icons/cil-gamepad.png);")
-
-        self.verticalLayout_8.addWidget(self.btn_widgets)
-
         self.btn_new = QPushButton(self.topMenu)
         self.btn_new.setObjectName(u"btn_new")
         sizePolicy.setHeightForWidth(self.btn_new.sizePolicy().hasHeightForWidth())
@@ -687,30 +687,6 @@ class Ui_MainWindow(object):
 
         self.verticalLayout_8.addWidget(self.btn_new)
 
-        self.btn_save = QPushButton(self.topMenu)
-        self.btn_save.setObjectName(u"btn_save")
-        sizePolicy.setHeightForWidth(self.btn_save.sizePolicy().hasHeightForWidth())
-        self.btn_save.setSizePolicy(sizePolicy)
-        self.btn_save.setMinimumSize(QSize(0, 45))
-        self.btn_save.setFont(font)
-        self.btn_save.setCursor(QCursor(Qt.PointingHandCursor))
-        self.btn_save.setLayoutDirection(Qt.LeftToRight)
-        self.btn_save.setStyleSheet(u"background-image: url(:/icons/images/icons/cil-save.png)")
-
-        self.verticalLayout_8.addWidget(self.btn_save)
-
-        self.btn_exit = QPushButton(self.topMenu)
-        self.btn_exit.setObjectName(u"btn_exit")
-        sizePolicy.setHeightForWidth(self.btn_exit.sizePolicy().hasHeightForWidth())
-        self.btn_exit.setSizePolicy(sizePolicy)
-        self.btn_exit.setMinimumSize(QSize(0, 45))
-        self.btn_exit.setFont(font)
-        self.btn_exit.setCursor(QCursor(Qt.PointingHandCursor))
-        self.btn_exit.setLayoutDirection(Qt.LeftToRight)
-        self.btn_exit.setStyleSheet(u"background-image: url(:/icons/images/icons/cil-x.png);")
-
-        self.verticalLayout_8.addWidget(self.btn_exit)
-
 
         self.verticalMenuLayout.addWidget(self.topMenu, 0, Qt.AlignTop)
 
@@ -722,18 +698,6 @@ class Ui_MainWindow(object):
         self.verticalLayout_9.setSpacing(0)
         self.verticalLayout_9.setObjectName(u"verticalLayout_9")
         self.verticalLayout_9.setContentsMargins(0, 0, 0, 0)
-        self.toggleLeftBox = QPushButton(self.bottomMenu)
-        self.toggleLeftBox.setObjectName(u"toggleLeftBox")
-        sizePolicy.setHeightForWidth(self.toggleLeftBox.sizePolicy().hasHeightForWidth())
-        self.toggleLeftBox.setSizePolicy(sizePolicy)
-        self.toggleLeftBox.setMinimumSize(QSize(0, 45))
-        self.toggleLeftBox.setFont(font)
-        self.toggleLeftBox.setCursor(QCursor(Qt.PointingHandCursor))
-        self.toggleLeftBox.setLayoutDirection(Qt.LeftToRight)
-        self.toggleLeftBox.setStyleSheet(u"background-image: url(:/icons/images/icons/icon_settings.png);")
-
-        self.verticalLayout_9.addWidget(self.toggleLeftBox)
-
 
         self.verticalMenuLayout.addWidget(self.bottomMenu, 0, Qt.AlignBottom)
 
@@ -926,7 +890,7 @@ class Ui_MainWindow(object):
         sizePolicy2.setHeightForWidth(self.titleRightInfo.sizePolicy().hasHeightForWidth())
         self.titleRightInfo.setSizePolicy(sizePolicy2)
         self.titleRightInfo.setMaximumSize(QSize(16777215, 45))
-        self.titleRightInfo.setFont(font)
+        self.titleRightInfo.setStyleSheet(u"font: 8pt \"Allerta\";")
         self.titleRightInfo.setAlignment(Qt.AlignLeading|Qt.AlignLeft|Qt.AlignVCenter)
 
         self.horizontalLayout_3.addWidget(self.titleRightInfo)
@@ -943,26 +907,14 @@ class Ui_MainWindow(object):
         self.horizontalLayout_2.setSpacing(5)
         self.horizontalLayout_2.setObjectName(u"horizontalLayout_2")
         self.horizontalLayout_2.setContentsMargins(0, 0, 0, 0)
-        self.settingsTopBtn = QPushButton(self.rightButtons)
-        self.settingsTopBtn.setObjectName(u"settingsTopBtn")
-        self.settingsTopBtn.setMinimumSize(QSize(28, 28))
-        self.settingsTopBtn.setMaximumSize(QSize(28, 28))
-        self.settingsTopBtn.setCursor(QCursor(Qt.PointingHandCursor))
-        icon1 = QIcon()
-        icon1.addFile(u":/icons/images/icons/icon_settings.png", QSize(), QIcon.Normal, QIcon.Off)
-        self.settingsTopBtn.setIcon(icon1)
-        self.settingsTopBtn.setIconSize(QSize(20, 20))
-
-        self.horizontalLayout_2.addWidget(self.settingsTopBtn)
-
         self.minimizeAppBtn = QPushButton(self.rightButtons)
         self.minimizeAppBtn.setObjectName(u"minimizeAppBtn")
         self.minimizeAppBtn.setMinimumSize(QSize(28, 28))
         self.minimizeAppBtn.setMaximumSize(QSize(28, 28))
         self.minimizeAppBtn.setCursor(QCursor(Qt.PointingHandCursor))
-        icon2 = QIcon()
-        icon2.addFile(u":/icons/images/icons/icon_minimize.png", QSize(), QIcon.Normal, QIcon.Off)
-        self.minimizeAppBtn.setIcon(icon2)
+        icon1 = QIcon()
+        icon1.addFile(u":/icons/images/icons/icon_minimize.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.minimizeAppBtn.setIcon(icon1)
         self.minimizeAppBtn.setIconSize(QSize(20, 20))
 
         self.horizontalLayout_2.addWidget(self.minimizeAppBtn)
@@ -971,17 +923,11 @@ class Ui_MainWindow(object):
         self.maximizeRestoreAppBtn.setObjectName(u"maximizeRestoreAppBtn")
         self.maximizeRestoreAppBtn.setMinimumSize(QSize(28, 28))
         self.maximizeRestoreAppBtn.setMaximumSize(QSize(28, 28))
-        font3 = QFont()
-        font3.setFamily(u"Segoe UI")
-        font3.setPointSize(10)
-        font3.setBold(False)
-        font3.setItalic(False)
-        font3.setStyleStrategy(QFont.PreferDefault)
-        self.maximizeRestoreAppBtn.setFont(font3)
+        self.maximizeRestoreAppBtn.setFont(font)
         self.maximizeRestoreAppBtn.setCursor(QCursor(Qt.PointingHandCursor))
-        icon3 = QIcon()
-        icon3.addFile(u":/icons/images/icons/icon_maximize.png", QSize(), QIcon.Normal, QIcon.Off)
-        self.maximizeRestoreAppBtn.setIcon(icon3)
+        icon2 = QIcon()
+        icon2.addFile(u":/icons/images/icons/icon_maximize.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.maximizeRestoreAppBtn.setIcon(icon2)
         self.maximizeRestoreAppBtn.setIconSize(QSize(20, 20))
 
         self.horizontalLayout_2.addWidget(self.maximizeRestoreAppBtn)
@@ -1029,366 +975,920 @@ class Ui_MainWindow(object):
         self.verticalLayout_15.setContentsMargins(10, 10, 10, 10)
         self.stackedWidget = QStackedWidget(self.pagesContainer)
         self.stackedWidget.setObjectName(u"stackedWidget")
+        sizePolicy3 = QSizePolicy(QSizePolicy.Minimum, QSizePolicy.Preferred)
+        sizePolicy3.setHorizontalStretch(0)
+        sizePolicy3.setVerticalStretch(0)
+        sizePolicy3.setHeightForWidth(self.stackedWidget.sizePolicy().hasHeightForWidth())
+        self.stackedWidget.setSizePolicy(sizePolicy3)
+        self.stackedWidget.setMaximumSize(QSize(1350, 610))
+        self.stackedWidget.setBaseSize(QSize(50, 50))
         self.stackedWidget.setStyleSheet(u"background: transparent;")
+        self.stackedWidget.setLineWidth(-2)
         self.home = QWidget()
         self.home.setObjectName(u"home")
-        self.home.setStyleSheet(u"background-image: url(:/images/images/images/PyDracula_vertical.png);\n"
+        self.home.setStyleSheet(u"background-image: url(:/images/images/images/LogoHome.png);\n"
 "background-position: center;\n"
 "background-repeat: no-repeat;")
         self.stackedWidget.addWidget(self.home)
-        self.widgets = QWidget()
-        self.widgets.setObjectName(u"widgets")
-        self.widgets.setStyleSheet(u"b")
-        self.verticalLayout = QVBoxLayout(self.widgets)
-        self.verticalLayout.setSpacing(10)
-        self.verticalLayout.setObjectName(u"verticalLayout")
-        self.verticalLayout.setContentsMargins(10, 10, 10, 10)
-        self.row_1 = QFrame(self.widgets)
-        self.row_1.setObjectName(u"row_1")
-        self.row_1.setFrameShape(QFrame.StyledPanel)
-        self.row_1.setFrameShadow(QFrame.Raised)
-        self.verticalLayout_16 = QVBoxLayout(self.row_1)
-        self.verticalLayout_16.setSpacing(0)
+        self.MenuPrincipal = QWidget()
+        self.MenuPrincipal.setObjectName(u"MenuPrincipal")
+        self.txtCantarrana = QPlainTextEdit(self.MenuPrincipal)
+        self.txtCantarrana.setObjectName(u"txtCantarrana")
+        self.txtCantarrana.setGeometry(QRect(260, 110, 200, 200))
+        self.txtCantarrana.setMinimumSize(QSize(200, 200))
+        font3 = QFont()
+        font3.setFamilies([u"Allerta"])
+        font3.setPointSize(18)
+        font3.setBold(False)
+        font3.setItalic(False)
+        font3.setUnderline(False)
+        font3.setKerning(True)
+        self.txtCantarrana.setFont(font3)
+        self.txtCantarrana.setLayoutDirection(Qt.LeftToRight)
+        self.txtCantarrana.setAutoFillBackground(False)
+        self.txtCantarrana.setStyleSheet(u"font: 500 18pt \"Allerta\";\n"
+"background-color: rgb(57, 163, 136);\n"
+"")
+        self.txtCantarrana.setReadOnly(False)
+        self.txtCantarrana.setTabStopDistance(96.000000000000000)
+        self.botonMenuCantarrana = QPushButton(self.MenuPrincipal)
+        self.botonMenuCantarrana.setObjectName(u"botonMenuCantarrana")
+        self.botonMenuCantarrana.setGeometry(QRect(260, 110, 201, 201))
+        self.botonMenuCantarrana.setStyleSheet(u"font: 650 20pt \"Allerta\";\n"
+"color: rgb(255, 255, 255);\n"
+"border-color: transparent;")
+        self.txtBosa = QPlainTextEdit(self.MenuPrincipal)
+        self.txtBosa.setObjectName(u"txtBosa")
+        self.txtBosa.setGeometry(QRect(730, 110, 200, 200))
+        self.txtBosa.setMinimumSize(QSize(200, 200))
+        self.txtBosa.setFont(font3)
+        self.txtBosa.setLayoutDirection(Qt.LeftToRight)
+        self.txtBosa.setAutoFillBackground(False)
+        self.txtBosa.setStyleSheet(u"font: 500 18pt \"Allerta\";\n"
+"background-color: rgb(145, 145, 217);\n"
+"")
+        self.txtBosa.setReadOnly(False)
+        self.txtBosa.setTabStopDistance(96.000000000000000)
+        self.botonMenuBosa = QPushButton(self.MenuPrincipal)
+        self.botonMenuBosa.setObjectName(u"botonMenuBosa")
+        self.botonMenuBosa.setGeometry(QRect(730, 110, 201, 201))
+        self.botonMenuBosa.setStyleSheet(u"font: 650 20pt \"Allerta\";\n"
+"color: rgb(255, 255, 255);\n"
+"border-color: transparent;")
+        self.CantarranaBtnLbl_3 = QLabel(self.MenuPrincipal)
+        self.CantarranaBtnLbl_3.setObjectName(u"CantarranaBtnLbl_3")
+        self.CantarranaBtnLbl_3.setGeometry(QRect(260, 340, 201, 210))
+        sizePolicy4 = QSizePolicy(QSizePolicy.Fixed, QSizePolicy.Preferred)
+        sizePolicy4.setHorizontalStretch(0)
+        sizePolicy4.setVerticalStretch(0)
+        sizePolicy4.setHeightForWidth(self.CantarranaBtnLbl_3.sizePolicy().hasHeightForWidth())
+        self.CantarranaBtnLbl_3.setSizePolicy(sizePolicy4)
+        self.CantarranaBtnLbl_3.setStyleSheet(u"font: 400 16pt \"Allerta\";\n"
+"color: rgb(255, 255, 255);\n"
+"border-color: transparent;")
+        self.CantarranaBtnLbl_3.setLineWidth(1)
+        self.CantarranaBtnLbl_3.setAlignment(Qt.AlignCenter)
+        self.CantarranaBtnLbl_4 = QLabel(self.MenuPrincipal)
+        self.CantarranaBtnLbl_4.setObjectName(u"CantarranaBtnLbl_4")
+        self.CantarranaBtnLbl_4.setGeometry(QRect(730, 340, 201, 210))
+        sizePolicy4.setHeightForWidth(self.CantarranaBtnLbl_4.sizePolicy().hasHeightForWidth())
+        self.CantarranaBtnLbl_4.setSizePolicy(sizePolicy4)
+        self.CantarranaBtnLbl_4.setStyleSheet(u"font: 400 16pt \"Allerta\";\n"
+"color: rgb(255, 255, 255);\n"
+"border-color: transparent;")
+        self.CantarranaBtnLbl_4.setLineWidth(1)
+        self.CantarranaBtnLbl_4.setAlignment(Qt.AlignCenter)
+        self.EstacionLbl_13 = QLineEdit(self.MenuPrincipal)
+        self.EstacionLbl_13.setObjectName(u"EstacionLbl_13")
+        self.EstacionLbl_13.setGeometry(QRect(240, 340, 4, 220))
+        sizePolicy5 = QSizePolicy(QSizePolicy.Fixed, QSizePolicy.Fixed)
+        sizePolicy5.setHorizontalStretch(0)
+        sizePolicy5.setVerticalStretch(0)
+        sizePolicy5.setHeightForWidth(self.EstacionLbl_13.sizePolicy().hasHeightForWidth())
+        self.EstacionLbl_13.setSizePolicy(sizePolicy5)
+        self.EstacionLbl_13.setMinimumSize(QSize(4, 220))
+        self.EstacionLbl_13.setMaximumSize(QSize(2, 220))
+        self.EstacionLbl_13.setStyleSheet(u"border-color: rgb(89, 255, 211);\n"
+"font: 550 11pt \"Allerta\";")
+        self.EstacionLbl_14 = QLineEdit(self.MenuPrincipal)
+        self.EstacionLbl_14.setObjectName(u"EstacionLbl_14")
+        self.EstacionLbl_14.setGeometry(QRect(710, 330, 4, 220))
+        sizePolicy5.setHeightForWidth(self.EstacionLbl_14.sizePolicy().hasHeightForWidth())
+        self.EstacionLbl_14.setSizePolicy(sizePolicy5)
+        self.EstacionLbl_14.setMinimumSize(QSize(4, 220))
+        self.EstacionLbl_14.setMaximumSize(QSize(2, 220))
+        self.EstacionLbl_14.setStyleSheet(u"border-color: rgb(169, 161, 255);\n"
+"font: 550 11pt \"Allerta\";")
+        self.CantarranaBtnLbl_7 = QLabel(self.MenuPrincipal)
+        self.CantarranaBtnLbl_7.setObjectName(u"CantarranaBtnLbl_7")
+        self.CantarranaBtnLbl_7.setGeometry(QRect(-10, 0, 1201, 81))
+        sizePolicy4.setHeightForWidth(self.CantarranaBtnLbl_7.sizePolicy().hasHeightForWidth())
+        self.CantarranaBtnLbl_7.setSizePolicy(sizePolicy4)
+        self.CantarranaBtnLbl_7.setStyleSheet(u"color: rgb(255, 255, 255);\n"
+"border-color: transparent;\n"
+"font: 900 60pt\"Market Deco\";")
+        self.CantarranaBtnLbl_7.setLineWidth(1)
+        self.CantarranaBtnLbl_7.setAlignment(Qt.AlignCenter)
+        self.stackedWidget.addWidget(self.MenuPrincipal)
+        self.pagina_Cantarrana = QWidget()
+        self.pagina_Cantarrana.setObjectName(u"pagina_Cantarrana")
+        self.tabCantarrana = QTabWidget(self.pagina_Cantarrana)
+        self.tabCantarrana.setObjectName(u"tabCantarrana")
+        self.tabCantarrana.setGeometry(QRect(0, 0, 1131, 621))
+        sizePolicy6 = QSizePolicy(QSizePolicy.Minimum, QSizePolicy.Fixed)
+        sizePolicy6.setHorizontalStretch(0)
+        sizePolicy6.setVerticalStretch(0)
+        sizePolicy6.setHeightForWidth(self.tabCantarrana.sizePolicy().hasHeightForWidth())
+        self.tabCantarrana.setSizePolicy(sizePolicy6)
+        self.tabCantarrana.setStyleSheet(u"font: 500 10pt \"Allerta\";\n"
+"color: rgb(79, 79, 79);")
+        self.tabCantarrana.setTabPosition(QTabWidget.West)
+        self.tabCantarrana.setTabsClosable(False)
+        self.CantarranaEntrada = QWidget()
+        self.CantarranaEntrada.setObjectName(u"CantarranaEntrada")
+        self.CantarranaEntrada.setStyleSheet(u"")
+        self.EstacionLbl = QLineEdit(self.CantarranaEntrada)
+        self.EstacionLbl.setObjectName(u"EstacionLbl")
+        self.EstacionLbl.setGeometry(QRect(130, 100, 830, 2))
+        sizePolicy5.setHeightForWidth(self.EstacionLbl.sizePolicy().hasHeightForWidth())
+        self.EstacionLbl.setSizePolicy(sizePolicy5)
+        self.EstacionLbl.setMinimumSize(QSize(830, 2))
+        self.EstacionLbl.setMaximumSize(QSize(830, 2))
+        self.EstacionLbl.setStyleSheet(u"border-color: rgb(211, 212, 216);\n"
+"font: 550 11pt \"Allerta\";")
+        self.EstacionLbl_5 = QLabel(self.CantarranaEntrada)
+        self.EstacionLbl_5.setObjectName(u"EstacionLbl_5")
+        self.EstacionLbl_5.setGeometry(QRect(10, 50, 1061, 35))
+        sizePolicy7 = QSizePolicy(QSizePolicy.Expanding, QSizePolicy.Expanding)
+        sizePolicy7.setHorizontalStretch(0)
+        sizePolicy7.setVerticalStretch(0)
+        sizePolicy7.setHeightForWidth(self.EstacionLbl_5.sizePolicy().hasHeightForWidth())
+        self.EstacionLbl_5.setSizePolicy(sizePolicy7)
+        self.EstacionLbl_5.setStyleSheet(u"font: 650 25pt \"Allerta\";\n"
+"")
+        self.EstacionLbl_5.setLineWidth(1)
+        self.EstacionLbl_5.setAlignment(Qt.AlignCenter)
+        self.EstacionLbl_2 = QLineEdit(self.CantarranaEntrada)
+        self.EstacionLbl_2.setObjectName(u"EstacionLbl_2")
+        self.EstacionLbl_2.setGeometry(QRect(130, 40, 830, 2))
+        sizePolicy5.setHeightForWidth(self.EstacionLbl_2.sizePolicy().hasHeightForWidth())
+        self.EstacionLbl_2.setSizePolicy(sizePolicy5)
+        self.EstacionLbl_2.setMinimumSize(QSize(830, 2))
+        self.EstacionLbl_2.setMaximumSize(QSize(830, 2))
+        self.EstacionLbl_2.setStyleSheet(u"border-color: rgb(211, 212, 216);\n"
+"font: 550 11pt \"Allerta\";")
+        self.groupBox_Propiedades_45 = QGroupBox(self.CantarranaEntrada)
+        self.groupBox_Propiedades_45.setObjectName(u"groupBox_Propiedades_45")
+        self.groupBox_Propiedades_45.setGeometry(QRect(50, 130, 770, 161))
+        sizePolicy6.setHeightForWidth(self.groupBox_Propiedades_45.sizePolicy().hasHeightForWidth())
+        self.groupBox_Propiedades_45.setSizePolicy(sizePolicy6)
+        self.groupBox_Propiedades_45.setMinimumSize(QSize(770, 0))
+        self.groupBox_Propiedades_45.setMaximumSize(QSize(700, 16777215))
+        self.groupBox_Propiedades_45.setStyleSheet(u"QGroupBox {\n"
+"color: rgb(118, 199, 158);\n"
+"font: bold; \n"
+"border: 2px solid;\n"
+"font: 700 11pt \"Allerta\";\n"
+"border-color: rgb(118, 199, 158);\n"
+"border-radius: 6px;\n"
+"margin: 10px;\n"
+"\n"
+"}\n"
+"\n"
+"QGroupBox::title {\n"
+"    subcontrol-origin: margin;\n"
+"   	subcontrol-position: top left;\n"
+"    padding: 0px 15px 0px 15px;\n"
+"}\n"
+"")
+        self.groupBox_Propiedades_45.setAlignment(Qt.AlignCenter)
+        self.verticalLayout_44 = QVBoxLayout(self.groupBox_Propiedades_45)
+        self.verticalLayout_44.setObjectName(u"verticalLayout_44")
+        self.row_73 = QFrame(self.groupBox_Propiedades_45)
+        self.row_73.setObjectName(u"row_73")
+        self.row_73.setStyleSheet(u"")
+        self.row_73.setFrameShape(QFrame.StyledPanel)
+        self.row_73.setFrameShadow(QFrame.Raised)
+        self.verticalLayout_93 = QVBoxLayout(self.row_73)
+        self.verticalLayout_93.setSpacing(0)
+        self.verticalLayout_93.setObjectName(u"verticalLayout_93")
+        self.verticalLayout_93.setContentsMargins(0, 0, 0, 0)
+        self.gridLayout_143 = QGridLayout()
+        self.gridLayout_143.setSpacing(20)
+        self.gridLayout_143.setObjectName(u"gridLayout_143")
+        self.gridLayout_143.setSizeConstraint(QLayout.SetNoConstraint)
+        self.gridLayout_143.setContentsMargins(20, 5, 20, 5)
+        self.CantarranaBtnLbl_2 = QLabel(self.row_73)
+        self.CantarranaBtnLbl_2.setObjectName(u"CantarranaBtnLbl_2")
+        sizePolicy4.setHeightForWidth(self.CantarranaBtnLbl_2.sizePolicy().hasHeightForWidth())
+        self.CantarranaBtnLbl_2.setSizePolicy(sizePolicy4)
+        self.CantarranaBtnLbl_2.setStyleSheet(u"font: 650 12pt \"Allerta\";")
+        self.CantarranaBtnLbl_2.setLineWidth(1)
+        self.CantarranaBtnLbl_2.setAlignment(Qt.AlignLeading|Qt.AlignLeft|Qt.AlignVCenter)
+
+        self.gridLayout_143.addWidget(self.CantarranaBtnLbl_2, 1, 0, 1, 1)
+
+        self.CantarranaBtnLbl = QLabel(self.row_73)
+        self.CantarranaBtnLbl.setObjectName(u"CantarranaBtnLbl")
+        sizePolicy4.setHeightForWidth(self.CantarranaBtnLbl.sizePolicy().hasHeightForWidth())
+        self.CantarranaBtnLbl.setSizePolicy(sizePolicy4)
+        self.CantarranaBtnLbl.setStyleSheet(u"font: 650 12pt \"Allerta\";")
+        self.CantarranaBtnLbl.setLineWidth(1)
+        self.CantarranaBtnLbl.setAlignment(Qt.AlignLeading|Qt.AlignLeft|Qt.AlignVCenter)
+
+        self.gridLayout_143.addWidget(self.CantarranaBtnLbl, 0, 0, 1, 1)
+
+        self.CantarranaComboBoxIntervalo = QLineEdit(self.row_73)
+        self.CantarranaComboBoxIntervalo.setObjectName(u"CantarranaComboBoxIntervalo")
+        sizePolicy7.setHeightForWidth(self.CantarranaComboBoxIntervalo.sizePolicy().hasHeightForWidth())
+        self.CantarranaComboBoxIntervalo.setSizePolicy(sizePolicy7)
+        self.CantarranaComboBoxIntervalo.setMinimumSize(QSize(110, 35))
+        self.CantarranaComboBoxIntervalo.setMaximumSize(QSize(200, 35))
+#if QT_CONFIG(tooltip)
+        self.CantarranaComboBoxIntervalo.setToolTip(u"")
+#endif // QT_CONFIG(tooltip)
+        self.CantarranaComboBoxIntervalo.setStyleSheet(u"border-color: rgb(211, 212, 216);\n"
+"font: 650 11pt \"Allerta\";\n"
+"")
+        self.CantarranaComboBoxIntervalo.setAlignment(Qt.AlignCenter)
+
+        self.gridLayout_143.addWidget(self.CantarranaComboBoxIntervalo, 1, 1, 1, 1)
+
+        self.CantarranaComboBoxNivel = QComboBox(self.row_73)
+        self.CantarranaComboBoxNivel.addItem("")
+        self.CantarranaComboBoxNivel.addItem("")
+        self.CantarranaComboBoxNivel.addItem("")
+        self.CantarranaComboBoxNivel.addItem("")
+        self.CantarranaComboBoxNivel.addItem("")
+        self.CantarranaComboBoxNivel.setObjectName(u"CantarranaComboBoxNivel")
+        self.CantarranaComboBoxNivel.setEnabled(True)
+        sizePolicy6.setHeightForWidth(self.CantarranaComboBoxNivel.sizePolicy().hasHeightForWidth())
+        self.CantarranaComboBoxNivel.setSizePolicy(sizePolicy6)
+        self.CantarranaComboBoxNivel.setMinimumSize(QSize(200, 35))
+        self.CantarranaComboBoxNivel.setMaximumSize(QSize(150, 30))
+        self.CantarranaComboBoxNivel.setLayoutDirection(Qt.LeftToRight)
+        self.CantarranaComboBoxNivel.setStyleSheet(u"border-color: rgb(211, 212, 216);\n"
+"background-color: rgb(255, 255, 255);")
+        self.CantarranaComboBoxNivel.setEditable(False)
+        self.CantarranaComboBoxNivel.setInsertPolicy(QComboBox.InsertAtCurrent)
+        self.CantarranaComboBoxNivel.setSizeAdjustPolicy(QComboBox.AdjustToContents)
+
+        self.gridLayout_143.addWidget(self.CantarranaComboBoxNivel, 0, 1, 1, 1)
+
+
+        self.verticalLayout_93.addLayout(self.gridLayout_143)
+
+
+        self.verticalLayout_44.addWidget(self.row_73)
+
+        self.verticalLayoutWidget_6 = QWidget(self.CantarranaEntrada)
+        self.verticalLayoutWidget_6.setObjectName(u"verticalLayoutWidget_6")
+        self.verticalLayoutWidget_6.setGeometry(QRect(890, 140, 141, 141))
+        self.verticalLayout_49 = QVBoxLayout(self.verticalLayoutWidget_6)
+        self.verticalLayout_49.setSpacing(20)
+        self.verticalLayout_49.setObjectName(u"verticalLayout_49")
+        self.verticalLayout_49.setContentsMargins(0, 0, 0, 0)
+        self.verticalLayout_50 = QVBoxLayout()
+        self.verticalLayout_50.setSpacing(20)
+        self.verticalLayout_50.setObjectName(u"verticalLayout_50")
+        self.horizontalLayout_30 = QHBoxLayout()
+        self.horizontalLayout_30.setObjectName(u"horizontalLayout_30")
+        self.CantarranaBtnCalcular = QPushButton(self.verticalLayoutWidget_6)
+        self.CantarranaBtnCalcular.setObjectName(u"CantarranaBtnCalcular")
+        self.CantarranaBtnCalcular.setMinimumSize(QSize(50, 50))
+        self.CantarranaBtnCalcular.setMaximumSize(QSize(40, 40))
+        self.CantarranaBtnCalcular.setStyleSheet(u"QPushButton\n"
+"{\n"
+"	border-color: rgb(57, 163, 136);\n"
+"	border-width: 2px;\n"
+"	border-radius: 20px;\n"
+"	background-color: rgb(57, 163, 136);\n"
+"}\n"
+"\n"
+"QPushButton:hover:!pressed\n"
+"{\n"
+"  	border: 3px solid rgb(28, 80, 66);\n"
+"	background-color: rgb(28, 80, 66);\n"
+"}")
+
+        self.horizontalLayout_30.addWidget(self.CantarranaBtnCalcular)
+
+
+        self.verticalLayout_50.addLayout(self.horizontalLayout_30)
+
+        self.horizontalLayout_120 = QHBoxLayout()
+        self.horizontalLayout_120.setObjectName(u"horizontalLayout_120")
+        self.CantarranaLblCalcular = QLabel(self.verticalLayoutWidget_6)
+        self.CantarranaLblCalcular.setObjectName(u"CantarranaLblCalcular")
+        sizePolicy5.setHeightForWidth(self.CantarranaLblCalcular.sizePolicy().hasHeightForWidth())
+        self.CantarranaLblCalcular.setSizePolicy(sizePolicy5)
+        self.CantarranaLblCalcular.setStyleSheet(u"font: 500 12pt \"Allerta\";\n"
+"")
+        self.CantarranaLblCalcular.setAlignment(Qt.AlignCenter)
+
+        self.horizontalLayout_120.addWidget(self.CantarranaLblCalcular)
+
+
+        self.verticalLayout_50.addLayout(self.horizontalLayout_120)
+
+
+        self.verticalLayout_49.addLayout(self.verticalLayout_50)
+
+        self.layoutWidget_10 = QWidget(self.CantarranaEntrada)
+        self.layoutWidget_10.setObjectName(u"layoutWidget_10")
+        self.layoutWidget_10.setGeometry(QRect(360, 280, 502, 302))
+        self.horizontalLayout_156 = QHBoxLayout(self.layoutWidget_10)
+        self.horizontalLayout_156.setObjectName(u"horizontalLayout_156")
+        self.horizontalLayout_156.setContentsMargins(0, 0, 0, 0)
+        self.CantarranaGrafica = QPushButton(self.layoutWidget_10)
+        self.CantarranaGrafica.setObjectName(u"CantarranaGrafica")
+        self.CantarranaGrafica.setEnabled(False)
+        sizePolicy5.setHeightForWidth(self.CantarranaGrafica.sizePolicy().hasHeightForWidth())
+        self.CantarranaGrafica.setSizePolicy(sizePolicy5)
+        self.CantarranaGrafica.setMinimumSize(QSize(500, 300))
+        self.CantarranaGrafica.setStyleSheet(u"background-color: rgb(255,255,255);\n"
+"border-image: url(:/curvasDuracion/images/curvasDuracion/Cantarrana_diario.jpg);")
+        self.CantarranaGrafica.setFlat(True)
+
+        self.horizontalLayout_156.addWidget(self.CantarranaGrafica)
+
+        self.EstacionLbl_3 = QLineEdit(self.CantarranaEntrada)
+        self.EstacionLbl_3.setObjectName(u"EstacionLbl_3")
+        self.EstacionLbl_3.setGeometry(QRect(60, 570, 265, 2))
+        sizePolicy5.setHeightForWidth(self.EstacionLbl_3.sizePolicy().hasHeightForWidth())
+        self.EstacionLbl_3.setSizePolicy(sizePolicy5)
+        self.EstacionLbl_3.setMinimumSize(QSize(265, 2))
+        self.EstacionLbl_3.setMaximumSize(QSize(250, 2))
+        self.EstacionLbl_3.setStyleSheet(u"border-color: rgb(211, 212, 216);\n"
+"font: 550 11pt \"Allerta\";")
+        self.EstacionLbl_6 = QLabel(self.CantarranaEntrada)
+        self.EstacionLbl_6.setObjectName(u"EstacionLbl_6")
+        self.EstacionLbl_6.setGeometry(QRect(60, 330, 265, 21))
+        sizePolicy5.setHeightForWidth(self.EstacionLbl_6.sizePolicy().hasHeightForWidth())
+        self.EstacionLbl_6.setSizePolicy(sizePolicy5)
+        self.EstacionLbl_6.setMinimumSize(QSize(265, 0))
+        self.EstacionLbl_6.setMaximumSize(QSize(265, 16777215))
+        self.EstacionLbl_6.setStyleSheet(u"font: 600 12pt \"Allerta\";\n"
+"background-color: rgb(118, 199, 158);\n"
+"color: rgb(255, 255, 255);")
+        self.EstacionLbl_6.setTextFormat(Qt.AutoText)
+        self.EstacionLbl_6.setAlignment(Qt.AlignCenter)
+        self.EstacionLbl_4 = QLineEdit(self.CantarranaEntrada)
+        self.EstacionLbl_4.setObjectName(u"EstacionLbl_4")
+        self.EstacionLbl_4.setGeometry(QRect(60, 320, 265, 2))
+        sizePolicy5.setHeightForWidth(self.EstacionLbl_4.sizePolicy().hasHeightForWidth())
+        self.EstacionLbl_4.setSizePolicy(sizePolicy5)
+        self.EstacionLbl_4.setMinimumSize(QSize(265, 2))
+        self.EstacionLbl_4.setMaximumSize(QSize(250, 2))
+        self.EstacionLbl_4.setStyleSheet(u"border-color: rgb(211, 212, 216);\n"
+"font: 550 11pt \"Allerta\";")
+        self.layoutWidget = QWidget(self.CantarranaEntrada)
+        self.layoutWidget.setObjectName(u"layoutWidget")
+        self.layoutWidget.setGeometry(QRect(210, 360, 111, 201))
+        self.verticalLayout_16 = QVBoxLayout(self.layoutWidget)
         self.verticalLayout_16.setObjectName(u"verticalLayout_16")
         self.verticalLayout_16.setContentsMargins(0, 0, 0, 0)
-        self.frame_div_content_1 = QFrame(self.row_1)
-        self.frame_div_content_1.setObjectName(u"frame_div_content_1")
-        self.frame_div_content_1.setMinimumSize(QSize(0, 110))
-        self.frame_div_content_1.setMaximumSize(QSize(16777215, 110))
-        self.frame_div_content_1.setFrameShape(QFrame.NoFrame)
-        self.frame_div_content_1.setFrameShadow(QFrame.Raised)
-        self.verticalLayout_17 = QVBoxLayout(self.frame_div_content_1)
-        self.verticalLayout_17.setSpacing(0)
-        self.verticalLayout_17.setObjectName(u"verticalLayout_17")
-        self.verticalLayout_17.setContentsMargins(0, 0, 0, 0)
-        self.frame_title_wid_1 = QFrame(self.frame_div_content_1)
-        self.frame_title_wid_1.setObjectName(u"frame_title_wid_1")
-        self.frame_title_wid_1.setMaximumSize(QSize(16777215, 35))
-        self.frame_title_wid_1.setFrameShape(QFrame.StyledPanel)
-        self.frame_title_wid_1.setFrameShadow(QFrame.Raised)
-        self.verticalLayout_18 = QVBoxLayout(self.frame_title_wid_1)
-        self.verticalLayout_18.setObjectName(u"verticalLayout_18")
-        self.labelBoxBlenderInstalation = QLabel(self.frame_title_wid_1)
-        self.labelBoxBlenderInstalation.setObjectName(u"labelBoxBlenderInstalation")
-        self.labelBoxBlenderInstalation.setFont(font)
-        self.labelBoxBlenderInstalation.setStyleSheet(u"")
+        self.CantarranaFieldMinimo = QLabel(self.layoutWidget)
+        self.CantarranaFieldMinimo.setObjectName(u"CantarranaFieldMinimo")
+        sizePolicy4.setHeightForWidth(self.CantarranaFieldMinimo.sizePolicy().hasHeightForWidth())
+        self.CantarranaFieldMinimo.setSizePolicy(sizePolicy4)
+        self.CantarranaFieldMinimo.setStyleSheet(u"font: 650 12pt \"Allerta\";")
+        self.CantarranaFieldMinimo.setLineWidth(1)
+        self.CantarranaFieldMinimo.setAlignment(Qt.AlignLeading|Qt.AlignLeft|Qt.AlignVCenter)
 
-        self.verticalLayout_18.addWidget(self.labelBoxBlenderInstalation)
+        self.verticalLayout_16.addWidget(self.CantarranaFieldMinimo)
+
+        self.CantarranaFieldMaximo = QLabel(self.layoutWidget)
+        self.CantarranaFieldMaximo.setObjectName(u"CantarranaFieldMaximo")
+        sizePolicy4.setHeightForWidth(self.CantarranaFieldMaximo.sizePolicy().hasHeightForWidth())
+        self.CantarranaFieldMaximo.setSizePolicy(sizePolicy4)
+        self.CantarranaFieldMaximo.setStyleSheet(u"font: 650 12pt \"Allerta\";")
+        self.CantarranaFieldMaximo.setLineWidth(1)
+        self.CantarranaFieldMaximo.setAlignment(Qt.AlignLeading|Qt.AlignLeft|Qt.AlignVCenter)
+
+        self.verticalLayout_16.addWidget(self.CantarranaFieldMaximo)
+
+        self.CantarranaFieldRango = QLabel(self.layoutWidget)
+        self.CantarranaFieldRango.setObjectName(u"CantarranaFieldRango")
+        sizePolicy4.setHeightForWidth(self.CantarranaFieldRango.sizePolicy().hasHeightForWidth())
+        self.CantarranaFieldRango.setSizePolicy(sizePolicy4)
+        self.CantarranaFieldRango.setStyleSheet(u"font: 650 12pt \"Allerta\";")
+        self.CantarranaFieldRango.setLineWidth(1)
+        self.CantarranaFieldRango.setAlignment(Qt.AlignLeading|Qt.AlignLeft|Qt.AlignVCenter)
+
+        self.verticalLayout_16.addWidget(self.CantarranaFieldRango)
+
+        self.CantarranaFieldAmplitud = QLabel(self.layoutWidget)
+        self.CantarranaFieldAmplitud.setObjectName(u"CantarranaFieldAmplitud")
+        sizePolicy4.setHeightForWidth(self.CantarranaFieldAmplitud.sizePolicy().hasHeightForWidth())
+        self.CantarranaFieldAmplitud.setSizePolicy(sizePolicy4)
+        self.CantarranaFieldAmplitud.setStyleSheet(u"font: 650 12pt \"Allerta\";")
+        self.CantarranaFieldAmplitud.setLineWidth(1)
+        self.CantarranaFieldAmplitud.setAlignment(Qt.AlignLeading|Qt.AlignLeft|Qt.AlignVCenter)
+
+        self.verticalLayout_16.addWidget(self.CantarranaFieldAmplitud)
+
+        self.CantarranaFieldDatos = QLabel(self.layoutWidget)
+        self.CantarranaFieldDatos.setObjectName(u"CantarranaFieldDatos")
+        sizePolicy4.setHeightForWidth(self.CantarranaFieldDatos.sizePolicy().hasHeightForWidth())
+        self.CantarranaFieldDatos.setSizePolicy(sizePolicy4)
+        self.CantarranaFieldDatos.setStyleSheet(u"font: 650 12pt \"Allerta\";")
+        self.CantarranaFieldDatos.setLineWidth(1)
+        self.CantarranaFieldDatos.setAlignment(Qt.AlignLeading|Qt.AlignLeft|Qt.AlignVCenter)
+
+        self.verticalLayout_16.addWidget(self.CantarranaFieldDatos)
+
+        self.layoutWidget1 = QWidget(self.CantarranaEntrada)
+        self.layoutWidget1.setObjectName(u"layoutWidget1")
+        self.layoutWidget1.setGeometry(QRect(60, 360, 138, 201))
+        self.verticalLayout = QVBoxLayout(self.layoutWidget1)
+        self.verticalLayout.setObjectName(u"verticalLayout")
+        self.verticalLayout.setContentsMargins(0, 0, 0, 0)
+        self.CantarranaLblMinimo = QLabel(self.layoutWidget1)
+        self.CantarranaLblMinimo.setObjectName(u"CantarranaLblMinimo")
+        sizePolicy4.setHeightForWidth(self.CantarranaLblMinimo.sizePolicy().hasHeightForWidth())
+        self.CantarranaLblMinimo.setSizePolicy(sizePolicy4)
+        self.CantarranaLblMinimo.setStyleSheet(u"font: 650 12pt \"Allerta\";")
+        self.CantarranaLblMinimo.setLineWidth(1)
+        self.CantarranaLblMinimo.setAlignment(Qt.AlignLeading|Qt.AlignLeft|Qt.AlignVCenter)
+
+        self.verticalLayout.addWidget(self.CantarranaLblMinimo)
+
+        self.CantarranaLblMaximo = QLabel(self.layoutWidget1)
+        self.CantarranaLblMaximo.setObjectName(u"CantarranaLblMaximo")
+        sizePolicy4.setHeightForWidth(self.CantarranaLblMaximo.sizePolicy().hasHeightForWidth())
+        self.CantarranaLblMaximo.setSizePolicy(sizePolicy4)
+        self.CantarranaLblMaximo.setStyleSheet(u"font: 650 12pt \"Allerta\";")
+        self.CantarranaLblMaximo.setLineWidth(1)
+        self.CantarranaLblMaximo.setAlignment(Qt.AlignLeading|Qt.AlignLeft|Qt.AlignVCenter)
+
+        self.verticalLayout.addWidget(self.CantarranaLblMaximo)
+
+        self.CantarranaLblRango = QLabel(self.layoutWidget1)
+        self.CantarranaLblRango.setObjectName(u"CantarranaLblRango")
+        sizePolicy4.setHeightForWidth(self.CantarranaLblRango.sizePolicy().hasHeightForWidth())
+        self.CantarranaLblRango.setSizePolicy(sizePolicy4)
+        self.CantarranaLblRango.setStyleSheet(u"font: 650 12pt \"Allerta\";")
+        self.CantarranaLblRango.setLineWidth(1)
+        self.CantarranaLblRango.setAlignment(Qt.AlignLeading|Qt.AlignLeft|Qt.AlignVCenter)
+
+        self.verticalLayout.addWidget(self.CantarranaLblRango)
+
+        self.CantarranaLblAmplitud = QLabel(self.layoutWidget1)
+        self.CantarranaLblAmplitud.setObjectName(u"CantarranaLblAmplitud")
+        sizePolicy4.setHeightForWidth(self.CantarranaLblAmplitud.sizePolicy().hasHeightForWidth())
+        self.CantarranaLblAmplitud.setSizePolicy(sizePolicy4)
+        self.CantarranaLblAmplitud.setStyleSheet(u"font: 650 12pt \"Allerta\";")
+        self.CantarranaLblAmplitud.setLineWidth(1)
+        self.CantarranaLblAmplitud.setAlignment(Qt.AlignLeading|Qt.AlignLeft|Qt.AlignVCenter)
+
+        self.verticalLayout.addWidget(self.CantarranaLblAmplitud)
+
+        self.CantarranaLblDatos = QLabel(self.layoutWidget1)
+        self.CantarranaLblDatos.setObjectName(u"CantarranaLblDatos")
+        sizePolicy4.setHeightForWidth(self.CantarranaLblDatos.sizePolicy().hasHeightForWidth())
+        self.CantarranaLblDatos.setSizePolicy(sizePolicy4)
+        self.CantarranaLblDatos.setStyleSheet(u"font: 650 12pt \"Allerta\";")
+        self.CantarranaLblDatos.setLineWidth(1)
+        self.CantarranaLblDatos.setAlignment(Qt.AlignLeading|Qt.AlignLeft|Qt.AlignVCenter)
+
+        self.verticalLayout.addWidget(self.CantarranaLblDatos)
+
+        self.tabCantarrana.addTab(self.CantarranaEntrada, "")
+        self.CantarranaResultados = QWidget()
+        self.CantarranaResultados.setObjectName(u"CantarranaResultados")
+        self.CantarranaTabla = QTableWidget(self.CantarranaResultados)
+        self.CantarranaTabla.setObjectName(u"CantarranaTabla")
+        self.CantarranaTabla.setGeometry(QRect(30, 20, 780, 551))
+        self.CantarranaTabla.setLayoutDirection(Qt.LeftToRight)
+        self.CantarranaTabla.setStyleSheet(u"color: rgb(255, 255, 255);\n"
+"StepsViewer::StepsViewer(QWidget *parent) : QTableWidget(parent)\n"
+"{\n"
+"setColumnCount(2);\n"
+"setColumnWidth(0, 300);\n"
+"setColumnWidth(1, 400);\n"
+"}")
+        self.CantarranaTabla.setSizeAdjustPolicy(QAbstractScrollArea.AdjustIgnored)
+        self.CantarranaTabla.setAlternatingRowColors(False)
+        self.CantarranaTabla.setTextElideMode(Qt.ElideMiddle)
+        self.CantarranaBtnDescargarGrafica = QPushButton(self.CantarranaResultados)
+        self.CantarranaBtnDescargarGrafica.setObjectName(u"CantarranaBtnDescargarGrafica")
+        self.CantarranaBtnDescargarGrafica.setEnabled(True)
+        self.CantarranaBtnDescargarGrafica.setGeometry(QRect(880, 30, 180, 50))
+        sizePolicy8 = QSizePolicy(QSizePolicy.Preferred, QSizePolicy.Ignored)
+        sizePolicy8.setHorizontalStretch(0)
+        sizePolicy8.setVerticalStretch(0)
+        sizePolicy8.setHeightForWidth(self.CantarranaBtnDescargarGrafica.sizePolicy().hasHeightForWidth())
+        self.CantarranaBtnDescargarGrafica.setSizePolicy(sizePolicy8)
+        self.CantarranaBtnDescargarGrafica.setMinimumSize(QSize(180, 50))
+        self.CantarranaBtnDescargarGrafica.setMaximumSize(QSize(160, 40))
+        self.CantarranaBtnDescargarGrafica.setStyleSheet(u"background-color: rgb(163, 160, 159);\n"
+"border-width: 5px;\n"
+"border-color: rgb(163, 160, 159);\n"
+"border-radius: 15px;\n"
+"color: rgb(255, 255, 255);\n"
+"font: 700 11pt \"Allerta\";\n"
+"\n"
+"")
+        self.CantarranaBtnDescargarGrafica.setCheckable(False)
+        self.CantarranaBtnDescargarGrafica.setChecked(False)
+        self.CantarranaBtnDescargarGrafica.setAutoDefault(False)
+        self.tabCantarrana.addTab(self.CantarranaResultados, "")
+        self.stackedWidget.addWidget(self.pagina_Cantarrana)
+        self.pagina_Bosa = QWidget()
+        self.pagina_Bosa.setObjectName(u"pagina_Bosa")
+        self.tabBosa = QTabWidget(self.pagina_Bosa)
+        self.tabBosa.setObjectName(u"tabBosa")
+        self.tabBosa.setGeometry(QRect(0, 0, 1131, 621))
+        sizePolicy6.setHeightForWidth(self.tabBosa.sizePolicy().hasHeightForWidth())
+        self.tabBosa.setSizePolicy(sizePolicy6)
+        self.tabBosa.setStyleSheet(u"font: 500 10pt \"Allerta\";\n"
+"color: rgb(79, 79, 79);")
+        self.tabBosa.setTabPosition(QTabWidget.West)
+        self.tabBosa.setTabsClosable(False)
+        self.BosaEntrada = QWidget()
+        self.BosaEntrada.setObjectName(u"BosaEntrada")
+        self.BosaEntrada.setStyleSheet(u"")
+        self.EstacionLbl_7 = QLineEdit(self.BosaEntrada)
+        self.EstacionLbl_7.setObjectName(u"EstacionLbl_7")
+        self.EstacionLbl_7.setGeometry(QRect(130, 100, 830, 2))
+        sizePolicy5.setHeightForWidth(self.EstacionLbl_7.sizePolicy().hasHeightForWidth())
+        self.EstacionLbl_7.setSizePolicy(sizePolicy5)
+        self.EstacionLbl_7.setMinimumSize(QSize(830, 2))
+        self.EstacionLbl_7.setMaximumSize(QSize(830, 2))
+        self.EstacionLbl_7.setStyleSheet(u"border-color: rgb(211, 212, 216);\n"
+"font: 550 11pt \"Allerta\";")
+        self.EstacionLbl_8 = QLabel(self.BosaEntrada)
+        self.EstacionLbl_8.setObjectName(u"EstacionLbl_8")
+        self.EstacionLbl_8.setGeometry(QRect(10, 50, 1061, 35))
+        sizePolicy7.setHeightForWidth(self.EstacionLbl_8.sizePolicy().hasHeightForWidth())
+        self.EstacionLbl_8.setSizePolicy(sizePolicy7)
+        self.EstacionLbl_8.setStyleSheet(u"font: 650 25pt \"Allerta\";\n"
+"")
+        self.EstacionLbl_8.setLineWidth(1)
+        self.EstacionLbl_8.setAlignment(Qt.AlignCenter)
+        self.EstacionLbl_9 = QLineEdit(self.BosaEntrada)
+        self.EstacionLbl_9.setObjectName(u"EstacionLbl_9")
+        self.EstacionLbl_9.setGeometry(QRect(130, 40, 830, 2))
+        sizePolicy5.setHeightForWidth(self.EstacionLbl_9.sizePolicy().hasHeightForWidth())
+        self.EstacionLbl_9.setSizePolicy(sizePolicy5)
+        self.EstacionLbl_9.setMinimumSize(QSize(830, 2))
+        self.EstacionLbl_9.setMaximumSize(QSize(830, 2))
+        self.EstacionLbl_9.setStyleSheet(u"border-color: rgb(211, 212, 216);\n"
+"font: 550 11pt \"Allerta\";")
+        self.groupBox_Propiedades_46 = QGroupBox(self.BosaEntrada)
+        self.groupBox_Propiedades_46.setObjectName(u"groupBox_Propiedades_46")
+        self.groupBox_Propiedades_46.setGeometry(QRect(50, 130, 770, 161))
+        sizePolicy6.setHeightForWidth(self.groupBox_Propiedades_46.sizePolicy().hasHeightForWidth())
+        self.groupBox_Propiedades_46.setSizePolicy(sizePolicy6)
+        self.groupBox_Propiedades_46.setMinimumSize(QSize(770, 0))
+        self.groupBox_Propiedades_46.setMaximumSize(QSize(700, 16777215))
+        self.groupBox_Propiedades_46.setStyleSheet(u"QGroupBox {\n"
+"color: rgb(145, 145, 217);\n"
+"font: bold; \n"
+"border: 2px solid;\n"
+"font: 700 11pt \"Allerta\";\n"
+"border-color: rgb(145, 145, 217);\n"
+"border-radius: 6px;\n"
+"margin: 10px;\n"
+"\n"
+"}\n"
+"\n"
+"QGroupBox::title {\n"
+"    subcontrol-origin: margin;\n"
+"   	subcontrol-position: top left;\n"
+"    padding: 0px 15px 0px 15px;\n"
+"}\n"
+"")
+        self.groupBox_Propiedades_46.setAlignment(Qt.AlignCenter)
+        self.verticalLayout_46 = QVBoxLayout(self.groupBox_Propiedades_46)
+        self.verticalLayout_46.setObjectName(u"verticalLayout_46")
+        self.row_75 = QFrame(self.groupBox_Propiedades_46)
+        self.row_75.setObjectName(u"row_75")
+        self.row_75.setStyleSheet(u"")
+        self.row_75.setFrameShape(QFrame.StyledPanel)
+        self.row_75.setFrameShadow(QFrame.Raised)
+        self.verticalLayout_95 = QVBoxLayout(self.row_75)
+        self.verticalLayout_95.setSpacing(0)
+        self.verticalLayout_95.setObjectName(u"verticalLayout_95")
+        self.verticalLayout_95.setContentsMargins(0, 0, 0, 0)
+        self.gridLayout_145 = QGridLayout()
+        self.gridLayout_145.setSpacing(20)
+        self.gridLayout_145.setObjectName(u"gridLayout_145")
+        self.gridLayout_145.setSizeConstraint(QLayout.SetNoConstraint)
+        self.gridLayout_145.setContentsMargins(20, 5, 20, 5)
+        self.CantarranaBtnLbl_5 = QLabel(self.row_75)
+        self.CantarranaBtnLbl_5.setObjectName(u"CantarranaBtnLbl_5")
+        sizePolicy4.setHeightForWidth(self.CantarranaBtnLbl_5.sizePolicy().hasHeightForWidth())
+        self.CantarranaBtnLbl_5.setSizePolicy(sizePolicy4)
+        self.CantarranaBtnLbl_5.setStyleSheet(u"font: 650 12pt \"Allerta\";")
+        self.CantarranaBtnLbl_5.setLineWidth(1)
+        self.CantarranaBtnLbl_5.setAlignment(Qt.AlignLeading|Qt.AlignLeft|Qt.AlignVCenter)
+
+        self.gridLayout_145.addWidget(self.CantarranaBtnLbl_5, 1, 0, 1, 1)
+
+        self.CantarranaBtnLbl_6 = QLabel(self.row_75)
+        self.CantarranaBtnLbl_6.setObjectName(u"CantarranaBtnLbl_6")
+        sizePolicy4.setHeightForWidth(self.CantarranaBtnLbl_6.sizePolicy().hasHeightForWidth())
+        self.CantarranaBtnLbl_6.setSizePolicy(sizePolicy4)
+        self.CantarranaBtnLbl_6.setStyleSheet(u"font: 650 12pt \"Allerta\";")
+        self.CantarranaBtnLbl_6.setLineWidth(1)
+        self.CantarranaBtnLbl_6.setAlignment(Qt.AlignLeading|Qt.AlignLeft|Qt.AlignVCenter)
+
+        self.gridLayout_145.addWidget(self.CantarranaBtnLbl_6, 0, 0, 1, 1)
+
+        self.BosaComboBoxIntervalo = QLineEdit(self.row_75)
+        self.BosaComboBoxIntervalo.setObjectName(u"BosaComboBoxIntervalo")
+        sizePolicy7.setHeightForWidth(self.BosaComboBoxIntervalo.sizePolicy().hasHeightForWidth())
+        self.BosaComboBoxIntervalo.setSizePolicy(sizePolicy7)
+        self.BosaComboBoxIntervalo.setMinimumSize(QSize(110, 35))
+        self.BosaComboBoxIntervalo.setMaximumSize(QSize(200, 35))
+#if QT_CONFIG(tooltip)
+        self.BosaComboBoxIntervalo.setToolTip(u"")
+#endif // QT_CONFIG(tooltip)
+        self.BosaComboBoxIntervalo.setStyleSheet(u"border-color: rgb(211, 212, 216);\n"
+"font: 650 11pt \"Allerta\";\n"
+"")
+        self.BosaComboBoxIntervalo.setAlignment(Qt.AlignCenter)
+
+        self.gridLayout_145.addWidget(self.BosaComboBoxIntervalo, 1, 1, 1, 1)
+
+        self.BosaComboBoxNivel = QComboBox(self.row_75)
+        self.BosaComboBoxNivel.addItem("")
+        self.BosaComboBoxNivel.addItem("")
+        self.BosaComboBoxNivel.addItem("")
+        self.BosaComboBoxNivel.addItem("")
+        self.BosaComboBoxNivel.addItem("")
+        self.BosaComboBoxNivel.setObjectName(u"BosaComboBoxNivel")
+        self.BosaComboBoxNivel.setEnabled(True)
+        sizePolicy6.setHeightForWidth(self.BosaComboBoxNivel.sizePolicy().hasHeightForWidth())
+        self.BosaComboBoxNivel.setSizePolicy(sizePolicy6)
+        self.BosaComboBoxNivel.setMinimumSize(QSize(200, 35))
+        self.BosaComboBoxNivel.setMaximumSize(QSize(150, 30))
+        self.BosaComboBoxNivel.setLayoutDirection(Qt.LeftToRight)
+        self.BosaComboBoxNivel.setStyleSheet(u"border-color: rgb(211, 212, 216);\n"
+"background-color: rgb(255, 255, 255);")
+        self.BosaComboBoxNivel.setEditable(False)
+        self.BosaComboBoxNivel.setInsertPolicy(QComboBox.InsertAtCurrent)
+        self.BosaComboBoxNivel.setSizeAdjustPolicy(QComboBox.AdjustToContents)
+
+        self.gridLayout_145.addWidget(self.BosaComboBoxNivel, 0, 1, 1, 1)
 
 
-        self.verticalLayout_17.addWidget(self.frame_title_wid_1)
-
-        self.frame_content_wid_1 = QFrame(self.frame_div_content_1)
-        self.frame_content_wid_1.setObjectName(u"frame_content_wid_1")
-        self.frame_content_wid_1.setFrameShape(QFrame.NoFrame)
-        self.frame_content_wid_1.setFrameShadow(QFrame.Raised)
-        self.horizontalLayout_9 = QHBoxLayout(self.frame_content_wid_1)
-        self.horizontalLayout_9.setObjectName(u"horizontalLayout_9")
-        self.gridLayout = QGridLayout()
-        self.gridLayout.setObjectName(u"gridLayout")
-        self.gridLayout.setContentsMargins(-1, -1, -1, 0)
-        self.lineEdit = QLineEdit(self.frame_content_wid_1)
-        self.lineEdit.setObjectName(u"lineEdit")
-        self.lineEdit.setMinimumSize(QSize(0, 30))
-        self.lineEdit.setStyleSheet(u"background-color: rgb(33, 37, 43);")
-
-        self.gridLayout.addWidget(self.lineEdit, 0, 0, 1, 1)
-
-        self.pushButton = QPushButton(self.frame_content_wid_1)
-        self.pushButton.setObjectName(u"pushButton")
-        self.pushButton.setMinimumSize(QSize(150, 30))
-        self.pushButton.setFont(font)
-        self.pushButton.setCursor(QCursor(Qt.PointingHandCursor))
-        self.pushButton.setStyleSheet(u"background-color: rgb(52, 59, 72);")
-        icon4 = QIcon()
-        icon4.addFile(u":/icons/images/icons/cil-folder-open.png", QSize(), QIcon.Normal, QIcon.Off)
-        self.pushButton.setIcon(icon4)
-
-        self.gridLayout.addWidget(self.pushButton, 0, 1, 1, 1)
-
-        self.labelVersion_3 = QLabel(self.frame_content_wid_1)
-        self.labelVersion_3.setObjectName(u"labelVersion_3")
-        self.labelVersion_3.setStyleSheet(u"color: rgb(113, 126, 149);")
-        self.labelVersion_3.setLineWidth(1)
-        self.labelVersion_3.setAlignment(Qt.AlignLeading|Qt.AlignLeft|Qt.AlignVCenter)
-
-        self.gridLayout.addWidget(self.labelVersion_3, 1, 0, 1, 2)
+        self.verticalLayout_95.addLayout(self.gridLayout_145)
 
 
-        self.horizontalLayout_9.addLayout(self.gridLayout)
+        self.verticalLayout_46.addWidget(self.row_75)
+
+        self.verticalLayoutWidget_7 = QWidget(self.BosaEntrada)
+        self.verticalLayoutWidget_7.setObjectName(u"verticalLayoutWidget_7")
+        self.verticalLayoutWidget_7.setGeometry(QRect(890, 140, 141, 141))
+        self.verticalLayout_53 = QVBoxLayout(self.verticalLayoutWidget_7)
+        self.verticalLayout_53.setSpacing(20)
+        self.verticalLayout_53.setObjectName(u"verticalLayout_53")
+        self.verticalLayout_53.setContentsMargins(0, 0, 0, 0)
+        self.verticalLayout_54 = QVBoxLayout()
+        self.verticalLayout_54.setSpacing(20)
+        self.verticalLayout_54.setObjectName(u"verticalLayout_54")
+        self.horizontalLayout_32 = QHBoxLayout()
+        self.horizontalLayout_32.setObjectName(u"horizontalLayout_32")
+        self.BosaBtnCalcular = QPushButton(self.verticalLayoutWidget_7)
+        self.BosaBtnCalcular.setObjectName(u"BosaBtnCalcular")
+        self.BosaBtnCalcular.setMinimumSize(QSize(50, 50))
+        self.BosaBtnCalcular.setMaximumSize(QSize(40, 40))
+        self.BosaBtnCalcular.setStyleSheet(u"QPushButton\n"
+"{\n"
+"	border-color: rgb(145, 145, 217);\n"
+"	border-width: 2px;\n"
+"	border-radius: 20px;\n"
+"	background-color: rgb(145, 145, 217);\n"
+"}\n"
+"\n"
+"QPushButton:hover:!pressed\n"
+"{\n"
+"  	border: 3px solid rgb(94, 94, 141);\n"
+"	background-color: rgb(94, 94, 141);\n"
+"}")
+
+        self.horizontalLayout_32.addWidget(self.BosaBtnCalcular)
 
 
-        self.verticalLayout_17.addWidget(self.frame_content_wid_1)
+        self.verticalLayout_54.addLayout(self.horizontalLayout_32)
+
+        self.horizontalLayout_122 = QHBoxLayout()
+        self.horizontalLayout_122.setObjectName(u"horizontalLayout_122")
+        self.BosaLblCalcular = QLabel(self.verticalLayoutWidget_7)
+        self.BosaLblCalcular.setObjectName(u"BosaLblCalcular")
+        sizePolicy5.setHeightForWidth(self.BosaLblCalcular.sizePolicy().hasHeightForWidth())
+        self.BosaLblCalcular.setSizePolicy(sizePolicy5)
+        self.BosaLblCalcular.setStyleSheet(u"font: 500 12pt \"Allerta\";\n"
+"")
+        self.BosaLblCalcular.setAlignment(Qt.AlignCenter)
+
+        self.horizontalLayout_122.addWidget(self.BosaLblCalcular)
 
 
-        self.verticalLayout_16.addWidget(self.frame_div_content_1)
+        self.verticalLayout_54.addLayout(self.horizontalLayout_122)
 
 
-        self.verticalLayout.addWidget(self.row_1)
+        self.verticalLayout_53.addLayout(self.verticalLayout_54)
 
-        self.row_2 = QFrame(self.widgets)
-        self.row_2.setObjectName(u"row_2")
-        self.row_2.setMinimumSize(QSize(0, 150))
-        self.row_2.setFrameShape(QFrame.StyledPanel)
-        self.row_2.setFrameShadow(QFrame.Raised)
-        self.verticalLayout_19 = QVBoxLayout(self.row_2)
+        self.EstacionLbl_10 = QLineEdit(self.BosaEntrada)
+        self.EstacionLbl_10.setObjectName(u"EstacionLbl_10")
+        self.EstacionLbl_10.setGeometry(QRect(60, 570, 265, 2))
+        sizePolicy5.setHeightForWidth(self.EstacionLbl_10.sizePolicy().hasHeightForWidth())
+        self.EstacionLbl_10.setSizePolicy(sizePolicy5)
+        self.EstacionLbl_10.setMinimumSize(QSize(265, 2))
+        self.EstacionLbl_10.setMaximumSize(QSize(250, 2))
+        self.EstacionLbl_10.setStyleSheet(u"border-color: rgb(211, 212, 216);\n"
+"font: 550 11pt \"Allerta\";")
+        self.EstacionLbl_11 = QLabel(self.BosaEntrada)
+        self.EstacionLbl_11.setObjectName(u"EstacionLbl_11")
+        self.EstacionLbl_11.setGeometry(QRect(60, 330, 265, 21))
+        sizePolicy5.setHeightForWidth(self.EstacionLbl_11.sizePolicy().hasHeightForWidth())
+        self.EstacionLbl_11.setSizePolicy(sizePolicy5)
+        self.EstacionLbl_11.setMinimumSize(QSize(265, 0))
+        self.EstacionLbl_11.setMaximumSize(QSize(265, 16777215))
+        self.EstacionLbl_11.setStyleSheet(u"font: 600 12pt \"Allerta\";\n"
+"background-color: rgb(145, 145, 217);\n"
+"color: rgb(255, 255, 255);")
+        self.EstacionLbl_11.setTextFormat(Qt.AutoText)
+        self.EstacionLbl_11.setAlignment(Qt.AlignCenter)
+        self.EstacionLbl_12 = QLineEdit(self.BosaEntrada)
+        self.EstacionLbl_12.setObjectName(u"EstacionLbl_12")
+        self.EstacionLbl_12.setGeometry(QRect(60, 320, 265, 2))
+        sizePolicy5.setHeightForWidth(self.EstacionLbl_12.sizePolicy().hasHeightForWidth())
+        self.EstacionLbl_12.setSizePolicy(sizePolicy5)
+        self.EstacionLbl_12.setMinimumSize(QSize(265, 2))
+        self.EstacionLbl_12.setMaximumSize(QSize(250, 2))
+        self.EstacionLbl_12.setStyleSheet(u"border-color: rgb(211, 212, 216);\n"
+"font: 550 11pt \"Allerta\";")
+        self.layoutWidget_2 = QWidget(self.BosaEntrada)
+        self.layoutWidget_2.setObjectName(u"layoutWidget_2")
+        self.layoutWidget_2.setGeometry(QRect(210, 360, 111, 201))
+        self.verticalLayout_19 = QVBoxLayout(self.layoutWidget_2)
         self.verticalLayout_19.setObjectName(u"verticalLayout_19")
-        self.gridLayout_2 = QGridLayout()
-        self.gridLayout_2.setObjectName(u"gridLayout_2")
-        self.checkBox = QCheckBox(self.row_2)
-        self.checkBox.setObjectName(u"checkBox")
-        self.checkBox.setAutoFillBackground(False)
-        self.checkBox.setStyleSheet(u"")
+        self.verticalLayout_19.setContentsMargins(0, 0, 0, 0)
+        self.BosaFieldMinimo = QLabel(self.layoutWidget_2)
+        self.BosaFieldMinimo.setObjectName(u"BosaFieldMinimo")
+        sizePolicy4.setHeightForWidth(self.BosaFieldMinimo.sizePolicy().hasHeightForWidth())
+        self.BosaFieldMinimo.setSizePolicy(sizePolicy4)
+        self.BosaFieldMinimo.setStyleSheet(u"font: 650 12pt \"Allerta\";")
+        self.BosaFieldMinimo.setLineWidth(1)
+        self.BosaFieldMinimo.setAlignment(Qt.AlignLeading|Qt.AlignLeft|Qt.AlignVCenter)
 
-        self.gridLayout_2.addWidget(self.checkBox, 0, 0, 1, 1)
+        self.verticalLayout_19.addWidget(self.BosaFieldMinimo)
 
-        self.radioButton = QRadioButton(self.row_2)
-        self.radioButton.setObjectName(u"radioButton")
-        self.radioButton.setStyleSheet(u"")
+        self.BosaFieldMaximo = QLabel(self.layoutWidget_2)
+        self.BosaFieldMaximo.setObjectName(u"BosaFieldMaximo")
+        sizePolicy4.setHeightForWidth(self.BosaFieldMaximo.sizePolicy().hasHeightForWidth())
+        self.BosaFieldMaximo.setSizePolicy(sizePolicy4)
+        self.BosaFieldMaximo.setStyleSheet(u"font: 650 12pt \"Allerta\";")
+        self.BosaFieldMaximo.setLineWidth(1)
+        self.BosaFieldMaximo.setAlignment(Qt.AlignLeading|Qt.AlignLeft|Qt.AlignVCenter)
 
-        self.gridLayout_2.addWidget(self.radioButton, 0, 1, 1, 1)
+        self.verticalLayout_19.addWidget(self.BosaFieldMaximo)
 
-        self.verticalSlider = QSlider(self.row_2)
-        self.verticalSlider.setObjectName(u"verticalSlider")
-        self.verticalSlider.setStyleSheet(u"")
-        self.verticalSlider.setOrientation(Qt.Vertical)
+        self.BosaFieldRango = QLabel(self.layoutWidget_2)
+        self.BosaFieldRango.setObjectName(u"BosaFieldRango")
+        sizePolicy4.setHeightForWidth(self.BosaFieldRango.sizePolicy().hasHeightForWidth())
+        self.BosaFieldRango.setSizePolicy(sizePolicy4)
+        self.BosaFieldRango.setStyleSheet(u"font: 650 12pt \"Allerta\";")
+        self.BosaFieldRango.setLineWidth(1)
+        self.BosaFieldRango.setAlignment(Qt.AlignLeading|Qt.AlignLeft|Qt.AlignVCenter)
 
-        self.gridLayout_2.addWidget(self.verticalSlider, 0, 2, 3, 1)
+        self.verticalLayout_19.addWidget(self.BosaFieldRango)
 
-        self.verticalScrollBar = QScrollBar(self.row_2)
-        self.verticalScrollBar.setObjectName(u"verticalScrollBar")
-        self.verticalScrollBar.setStyleSheet(u" QScrollBar:vertical { background: rgb(52, 59, 72); }\n"
-" QScrollBar:horizontal { background: rgb(52, 59, 72); }")
-        self.verticalScrollBar.setOrientation(Qt.Vertical)
+        self.BosaFieldAmplitud = QLabel(self.layoutWidget_2)
+        self.BosaFieldAmplitud.setObjectName(u"BosaFieldAmplitud")
+        sizePolicy4.setHeightForWidth(self.BosaFieldAmplitud.sizePolicy().hasHeightForWidth())
+        self.BosaFieldAmplitud.setSizePolicy(sizePolicy4)
+        self.BosaFieldAmplitud.setStyleSheet(u"font: 650 12pt \"Allerta\";")
+        self.BosaFieldAmplitud.setLineWidth(1)
+        self.BosaFieldAmplitud.setAlignment(Qt.AlignLeading|Qt.AlignLeft|Qt.AlignVCenter)
 
-        self.gridLayout_2.addWidget(self.verticalScrollBar, 0, 4, 3, 1)
+        self.verticalLayout_19.addWidget(self.BosaFieldAmplitud)
 
-        self.scrollArea = QScrollArea(self.row_2)
-        self.scrollArea.setObjectName(u"scrollArea")
-        self.scrollArea.setStyleSheet(u" QScrollBar:vertical {\n"
-"    background: rgb(52, 59, 72);\n"
-" }\n"
-" QScrollBar:horizontal {\n"
-"    background: rgb(52, 59, 72);\n"
-" }")
-        self.scrollArea.setFrameShape(QFrame.NoFrame)
-        self.scrollArea.setVerticalScrollBarPolicy(Qt.ScrollBarAlwaysOn)
-        self.scrollArea.setHorizontalScrollBarPolicy(Qt.ScrollBarAsNeeded)
-        self.scrollArea.setWidgetResizable(True)
-        self.scrollAreaWidgetContents = QWidget()
-        self.scrollAreaWidgetContents.setObjectName(u"scrollAreaWidgetContents")
-        self.scrollAreaWidgetContents.setGeometry(QRect(0, 0, 218, 218))
-        self.scrollAreaWidgetContents.setStyleSheet(u" QScrollBar:vertical {\n"
-"	border: none;\n"
-"    background: rgb(52, 59, 72);\n"
-"    width: 14px;\n"
-"    margin: 21px 0 21px 0;\n"
-"	border-radius: 0px;\n"
-" }")
-        self.horizontalLayout_11 = QHBoxLayout(self.scrollAreaWidgetContents)
-        self.horizontalLayout_11.setObjectName(u"horizontalLayout_11")
-        self.plainTextEdit = QPlainTextEdit(self.scrollAreaWidgetContents)
-        self.plainTextEdit.setObjectName(u"plainTextEdit")
-        self.plainTextEdit.setMinimumSize(QSize(200, 200))
-        self.plainTextEdit.setStyleSheet(u"background-color: rgb(33, 37, 43);")
+        self.BosaFieldDatos = QLabel(self.layoutWidget_2)
+        self.BosaFieldDatos.setObjectName(u"BosaFieldDatos")
+        sizePolicy4.setHeightForWidth(self.BosaFieldDatos.sizePolicy().hasHeightForWidth())
+        self.BosaFieldDatos.setSizePolicy(sizePolicy4)
+        self.BosaFieldDatos.setStyleSheet(u"font: 650 12pt \"Allerta\";")
+        self.BosaFieldDatos.setLineWidth(1)
+        self.BosaFieldDatos.setAlignment(Qt.AlignLeading|Qt.AlignLeft|Qt.AlignVCenter)
 
-        self.horizontalLayout_11.addWidget(self.plainTextEdit)
+        self.verticalLayout_19.addWidget(self.BosaFieldDatos)
 
-        self.scrollArea.setWidget(self.scrollAreaWidgetContents)
-
-        self.gridLayout_2.addWidget(self.scrollArea, 0, 5, 3, 1)
-
-        self.comboBox = QComboBox(self.row_2)
-        self.comboBox.addItem("")
-        self.comboBox.addItem("")
-        self.comboBox.addItem("")
-        self.comboBox.setObjectName(u"comboBox")
-        self.comboBox.setFont(font)
-        self.comboBox.setAutoFillBackground(False)
-        self.comboBox.setStyleSheet(u"background-color: rgb(33, 37, 43);")
-        self.comboBox.setIconSize(QSize(16, 16))
-        self.comboBox.setFrame(True)
-
-        self.gridLayout_2.addWidget(self.comboBox, 1, 0, 1, 2)
-
-        self.horizontalScrollBar = QScrollBar(self.row_2)
-        self.horizontalScrollBar.setObjectName(u"horizontalScrollBar")
-        sizePolicy.setHeightForWidth(self.horizontalScrollBar.sizePolicy().hasHeightForWidth())
-        self.horizontalScrollBar.setSizePolicy(sizePolicy)
-        self.horizontalScrollBar.setStyleSheet(u" QScrollBar:vertical { background: rgb(52, 59, 72); }\n"
-" QScrollBar:horizontal { background: rgb(52, 59, 72); }")
-        self.horizontalScrollBar.setOrientation(Qt.Horizontal)
-
-        self.gridLayout_2.addWidget(self.horizontalScrollBar, 1, 3, 1, 1)
-
-        self.commandLinkButton = QCommandLinkButton(self.row_2)
-        self.commandLinkButton.setObjectName(u"commandLinkButton")
-        self.commandLinkButton.setCursor(QCursor(Qt.PointingHandCursor))
-        self.commandLinkButton.setStyleSheet(u"")
-        icon5 = QIcon()
-        icon5.addFile(u":/icons/images/icons/cil-link.png", QSize(), QIcon.Normal, QIcon.Off)
-        self.commandLinkButton.setIcon(icon5)
-
-        self.gridLayout_2.addWidget(self.commandLinkButton, 1, 6, 1, 1)
-
-        self.horizontalSlider = QSlider(self.row_2)
-        self.horizontalSlider.setObjectName(u"horizontalSlider")
-        self.horizontalSlider.setStyleSheet(u"")
-        self.horizontalSlider.setOrientation(Qt.Horizontal)
-
-        self.gridLayout_2.addWidget(self.horizontalSlider, 2, 0, 1, 2)
-
-
-        self.verticalLayout_19.addLayout(self.gridLayout_2)
-
-
-        self.verticalLayout.addWidget(self.row_2)
-
-        self.row_3 = QFrame(self.widgets)
-        self.row_3.setObjectName(u"row_3")
-        self.row_3.setMinimumSize(QSize(0, 150))
-        self.row_3.setFrameShape(QFrame.StyledPanel)
-        self.row_3.setFrameShadow(QFrame.Raised)
-        self.horizontalLayout_12 = QHBoxLayout(self.row_3)
-        self.horizontalLayout_12.setSpacing(0)
-        self.horizontalLayout_12.setObjectName(u"horizontalLayout_12")
-        self.horizontalLayout_12.setContentsMargins(0, 0, 0, 0)
-        self.tableWidget = QTableWidget(self.row_3)
-        if (self.tableWidget.columnCount() < 4):
-            self.tableWidget.setColumnCount(4)
-        __qtablewidgetitem = QTableWidgetItem()
-        self.tableWidget.setHorizontalHeaderItem(0, __qtablewidgetitem)
-        __qtablewidgetitem1 = QTableWidgetItem()
-        self.tableWidget.setHorizontalHeaderItem(1, __qtablewidgetitem1)
-        __qtablewidgetitem2 = QTableWidgetItem()
-        self.tableWidget.setHorizontalHeaderItem(2, __qtablewidgetitem2)
-        __qtablewidgetitem3 = QTableWidgetItem()
-        self.tableWidget.setHorizontalHeaderItem(3, __qtablewidgetitem3)
-        if (self.tableWidget.rowCount() < 16):
-            self.tableWidget.setRowCount(16)
-        font4 = QFont()
-        font4.setFamily(u"Segoe UI")
-        __qtablewidgetitem4 = QTableWidgetItem()
-        __qtablewidgetitem4.setFont(font4);
-        self.tableWidget.setVerticalHeaderItem(0, __qtablewidgetitem4)
-        __qtablewidgetitem5 = QTableWidgetItem()
-        self.tableWidget.setVerticalHeaderItem(1, __qtablewidgetitem5)
-        __qtablewidgetitem6 = QTableWidgetItem()
-        self.tableWidget.setVerticalHeaderItem(2, __qtablewidgetitem6)
-        __qtablewidgetitem7 = QTableWidgetItem()
-        self.tableWidget.setVerticalHeaderItem(3, __qtablewidgetitem7)
-        __qtablewidgetitem8 = QTableWidgetItem()
-        self.tableWidget.setVerticalHeaderItem(4, __qtablewidgetitem8)
-        __qtablewidgetitem9 = QTableWidgetItem()
-        self.tableWidget.setVerticalHeaderItem(5, __qtablewidgetitem9)
-        __qtablewidgetitem10 = QTableWidgetItem()
-        self.tableWidget.setVerticalHeaderItem(6, __qtablewidgetitem10)
-        __qtablewidgetitem11 = QTableWidgetItem()
-        self.tableWidget.setVerticalHeaderItem(7, __qtablewidgetitem11)
-        __qtablewidgetitem12 = QTableWidgetItem()
-        self.tableWidget.setVerticalHeaderItem(8, __qtablewidgetitem12)
-        __qtablewidgetitem13 = QTableWidgetItem()
-        self.tableWidget.setVerticalHeaderItem(9, __qtablewidgetitem13)
-        __qtablewidgetitem14 = QTableWidgetItem()
-        self.tableWidget.setVerticalHeaderItem(10, __qtablewidgetitem14)
-        __qtablewidgetitem15 = QTableWidgetItem()
-        self.tableWidget.setVerticalHeaderItem(11, __qtablewidgetitem15)
-        __qtablewidgetitem16 = QTableWidgetItem()
-        self.tableWidget.setVerticalHeaderItem(12, __qtablewidgetitem16)
-        __qtablewidgetitem17 = QTableWidgetItem()
-        self.tableWidget.setVerticalHeaderItem(13, __qtablewidgetitem17)
-        __qtablewidgetitem18 = QTableWidgetItem()
-        self.tableWidget.setVerticalHeaderItem(14, __qtablewidgetitem18)
-        __qtablewidgetitem19 = QTableWidgetItem()
-        self.tableWidget.setVerticalHeaderItem(15, __qtablewidgetitem19)
-        __qtablewidgetitem20 = QTableWidgetItem()
-        self.tableWidget.setItem(0, 0, __qtablewidgetitem20)
-        __qtablewidgetitem21 = QTableWidgetItem()
-        self.tableWidget.setItem(0, 1, __qtablewidgetitem21)
-        __qtablewidgetitem22 = QTableWidgetItem()
-        self.tableWidget.setItem(0, 2, __qtablewidgetitem22)
-        __qtablewidgetitem23 = QTableWidgetItem()
-        self.tableWidget.setItem(0, 3, __qtablewidgetitem23)
-        self.tableWidget.setObjectName(u"tableWidget")
-        sizePolicy3 = QSizePolicy(QSizePolicy.Expanding, QSizePolicy.Expanding)
-        sizePolicy3.setHorizontalStretch(0)
-        sizePolicy3.setVerticalStretch(0)
-        sizePolicy3.setHeightForWidth(self.tableWidget.sizePolicy().hasHeightForWidth())
-        self.tableWidget.setSizePolicy(sizePolicy3)
-        palette = QPalette()
-        brush = QBrush(QColor(221, 221, 221, 255))
-        brush.setStyle(Qt.SolidPattern)
-        palette.setBrush(QPalette.Active, QPalette.WindowText, brush)
-        brush1 = QBrush(QColor(0, 0, 0, 0))
-        brush1.setStyle(Qt.SolidPattern)
-        palette.setBrush(QPalette.Active, QPalette.Button, brush1)
-        palette.setBrush(QPalette.Active, QPalette.Text, brush)
-        palette.setBrush(QPalette.Active, QPalette.ButtonText, brush)
-        brush2 = QBrush(QColor(0, 0, 0, 255))
-        brush2.setStyle(Qt.NoBrush)
-        palette.setBrush(QPalette.Active, QPalette.Base, brush2)
-        palette.setBrush(QPalette.Active, QPalette.Window, brush1)
-#if QT_VERSION >= QT_VERSION_CHECK(5, 12, 0)
-        palette.setBrush(QPalette.Active, QPalette.PlaceholderText, brush)
-#endif
-        palette.setBrush(QPalette.Inactive, QPalette.WindowText, brush)
-        palette.setBrush(QPalette.Inactive, QPalette.Button, brush1)
-        palette.setBrush(QPalette.Inactive, QPalette.Text, brush)
-        palette.setBrush(QPalette.Inactive, QPalette.ButtonText, brush)
-        brush3 = QBrush(QColor(0, 0, 0, 255))
-        brush3.setStyle(Qt.NoBrush)
-        palette.setBrush(QPalette.Inactive, QPalette.Base, brush3)
-        palette.setBrush(QPalette.Inactive, QPalette.Window, brush1)
-#if QT_VERSION >= QT_VERSION_CHECK(5, 12, 0)
-        palette.setBrush(QPalette.Inactive, QPalette.PlaceholderText, brush)
-#endif
-        palette.setBrush(QPalette.Disabled, QPalette.WindowText, brush)
-        palette.setBrush(QPalette.Disabled, QPalette.Button, brush1)
-        palette.setBrush(QPalette.Disabled, QPalette.Text, brush)
-        palette.setBrush(QPalette.Disabled, QPalette.ButtonText, brush)
-        brush4 = QBrush(QColor(0, 0, 0, 255))
-        brush4.setStyle(Qt.NoBrush)
-        palette.setBrush(QPalette.Disabled, QPalette.Base, brush4)
-        palette.setBrush(QPalette.Disabled, QPalette.Window, brush1)
-#if QT_VERSION >= QT_VERSION_CHECK(5, 12, 0)
-        palette.setBrush(QPalette.Disabled, QPalette.PlaceholderText, brush)
-#endif
-        self.tableWidget.setPalette(palette)
-        self.tableWidget.setFrameShape(QFrame.NoFrame)
-        self.tableWidget.setVerticalScrollBarPolicy(Qt.ScrollBarAlwaysOn)
-        self.tableWidget.setSizeAdjustPolicy(QAbstractScrollArea.AdjustToContents)
-        self.tableWidget.setEditTriggers(QAbstractItemView.NoEditTriggers)
-        self.tableWidget.setSelectionMode(QAbstractItemView.SingleSelection)
-        self.tableWidget.setSelectionBehavior(QAbstractItemView.SelectRows)
-        self.tableWidget.setShowGrid(True)
-        self.tableWidget.setGridStyle(Qt.SolidLine)
-        self.tableWidget.setSortingEnabled(False)
-        self.tableWidget.horizontalHeader().setVisible(False)
-        self.tableWidget.horizontalHeader().setCascadingSectionResizes(True)
-        self.tableWidget.horizontalHeader().setDefaultSectionSize(200)
-        self.tableWidget.horizontalHeader().setStretchLastSection(True)
-        self.tableWidget.verticalHeader().setVisible(False)
-        self.tableWidget.verticalHeader().setCascadingSectionResizes(False)
-        self.tableWidget.verticalHeader().setHighlightSections(False)
-        self.tableWidget.verticalHeader().setStretchLastSection(True)
-
-        self.horizontalLayout_12.addWidget(self.tableWidget)
-
-
-        self.verticalLayout.addWidget(self.row_3)
-
-        self.stackedWidget.addWidget(self.widgets)
-        self.new_page = QWidget()
-        self.new_page.setObjectName(u"new_page")
-        self.verticalLayout_20 = QVBoxLayout(self.new_page)
+        self.layoutWidget_3 = QWidget(self.BosaEntrada)
+        self.layoutWidget_3.setObjectName(u"layoutWidget_3")
+        self.layoutWidget_3.setGeometry(QRect(60, 360, 138, 201))
+        self.verticalLayout_20 = QVBoxLayout(self.layoutWidget_3)
         self.verticalLayout_20.setObjectName(u"verticalLayout_20")
-        self.label = QLabel(self.new_page)
-        self.label.setObjectName(u"label")
-        self.label.setAlignment(Qt.AlignCenter)
+        self.verticalLayout_20.setContentsMargins(0, 0, 0, 0)
+        self.CantarranaLblMinimo_3 = QLabel(self.layoutWidget_3)
+        self.CantarranaLblMinimo_3.setObjectName(u"CantarranaLblMinimo_3")
+        sizePolicy4.setHeightForWidth(self.CantarranaLblMinimo_3.sizePolicy().hasHeightForWidth())
+        self.CantarranaLblMinimo_3.setSizePolicy(sizePolicy4)
+        self.CantarranaLblMinimo_3.setStyleSheet(u"font: 650 12pt \"Allerta\";")
+        self.CantarranaLblMinimo_3.setLineWidth(1)
+        self.CantarranaLblMinimo_3.setAlignment(Qt.AlignLeading|Qt.AlignLeft|Qt.AlignVCenter)
 
-        self.verticalLayout_20.addWidget(self.label)
+        self.verticalLayout_20.addWidget(self.CantarranaLblMinimo_3)
 
-        self.stackedWidget.addWidget(self.new_page)
+        self.CantarranaLblMaximo_3 = QLabel(self.layoutWidget_3)
+        self.CantarranaLblMaximo_3.setObjectName(u"CantarranaLblMaximo_3")
+        sizePolicy4.setHeightForWidth(self.CantarranaLblMaximo_3.sizePolicy().hasHeightForWidth())
+        self.CantarranaLblMaximo_3.setSizePolicy(sizePolicy4)
+        self.CantarranaLblMaximo_3.setStyleSheet(u"font: 650 12pt \"Allerta\";")
+        self.CantarranaLblMaximo_3.setLineWidth(1)
+        self.CantarranaLblMaximo_3.setAlignment(Qt.AlignLeading|Qt.AlignLeft|Qt.AlignVCenter)
+
+        self.verticalLayout_20.addWidget(self.CantarranaLblMaximo_3)
+
+        self.CantarranaLblRango_3 = QLabel(self.layoutWidget_3)
+        self.CantarranaLblRango_3.setObjectName(u"CantarranaLblRango_3")
+        sizePolicy4.setHeightForWidth(self.CantarranaLblRango_3.sizePolicy().hasHeightForWidth())
+        self.CantarranaLblRango_3.setSizePolicy(sizePolicy4)
+        self.CantarranaLblRango_3.setStyleSheet(u"font: 650 12pt \"Allerta\";")
+        self.CantarranaLblRango_3.setLineWidth(1)
+        self.CantarranaLblRango_3.setAlignment(Qt.AlignLeading|Qt.AlignLeft|Qt.AlignVCenter)
+
+        self.verticalLayout_20.addWidget(self.CantarranaLblRango_3)
+
+        self.CantarranaLblAmplitud_3 = QLabel(self.layoutWidget_3)
+        self.CantarranaLblAmplitud_3.setObjectName(u"CantarranaLblAmplitud_3")
+        sizePolicy4.setHeightForWidth(self.CantarranaLblAmplitud_3.sizePolicy().hasHeightForWidth())
+        self.CantarranaLblAmplitud_3.setSizePolicy(sizePolicy4)
+        self.CantarranaLblAmplitud_3.setStyleSheet(u"font: 650 12pt \"Allerta\";")
+        self.CantarranaLblAmplitud_3.setLineWidth(1)
+        self.CantarranaLblAmplitud_3.setAlignment(Qt.AlignLeading|Qt.AlignLeft|Qt.AlignVCenter)
+
+        self.verticalLayout_20.addWidget(self.CantarranaLblAmplitud_3)
+
+        self.CantarranaLblDatos_3 = QLabel(self.layoutWidget_3)
+        self.CantarranaLblDatos_3.setObjectName(u"CantarranaLblDatos_3")
+        sizePolicy4.setHeightForWidth(self.CantarranaLblDatos_3.sizePolicy().hasHeightForWidth())
+        self.CantarranaLblDatos_3.setSizePolicy(sizePolicy4)
+        self.CantarranaLblDatos_3.setStyleSheet(u"font: 650 12pt \"Allerta\";")
+        self.CantarranaLblDatos_3.setLineWidth(1)
+        self.CantarranaLblDatos_3.setAlignment(Qt.AlignLeading|Qt.AlignLeft|Qt.AlignVCenter)
+
+        self.verticalLayout_20.addWidget(self.CantarranaLblDatos_3)
+
+        self.layoutWidget_12 = QWidget(self.BosaEntrada)
+        self.layoutWidget_12.setObjectName(u"layoutWidget_12")
+        self.layoutWidget_12.setGeometry(QRect(360, 280, 502, 302))
+        self.horizontalLayout_157 = QHBoxLayout(self.layoutWidget_12)
+        self.horizontalLayout_157.setObjectName(u"horizontalLayout_157")
+        self.horizontalLayout_157.setContentsMargins(0, 0, 0, 0)
+        self.BosaGrafica = QPushButton(self.layoutWidget_12)
+        self.BosaGrafica.setObjectName(u"BosaGrafica")
+        self.BosaGrafica.setEnabled(False)
+        sizePolicy5.setHeightForWidth(self.BosaGrafica.sizePolicy().hasHeightForWidth())
+        self.BosaGrafica.setSizePolicy(sizePolicy5)
+        self.BosaGrafica.setMinimumSize(QSize(500, 300))
+        self.BosaGrafica.setStyleSheet(u"background-color: rgb(255,255,255);\n"
+"border-image: url(:/curvasDuracion/images/curvasDuracion/Bosa_diario.jpg);\n"
+"")
+        self.BosaGrafica.setFlat(True)
+
+        self.horizontalLayout_157.addWidget(self.BosaGrafica)
+
+        self.tabBosa.addTab(self.BosaEntrada, "")
+        self.BosaResultados = QWidget()
+        self.BosaResultados.setObjectName(u"BosaResultados")
+        self.BosaTabla = QTableWidget(self.BosaResultados)
+        self.BosaTabla.setObjectName(u"BosaTabla")
+        self.BosaTabla.setGeometry(QRect(30, 20, 780, 551))
+        self.BosaTabla.setMinimumSize(QSize(780, 0))
+        self.BosaTabla.setStyleSheet(u"color: rgb(255, 255, 255);\n"
+"StepsViewer::StepsViewer(QWidget *parent) : QTableWidget(parent)\n"
+"{\n"
+"setColumnCount(2);\n"
+"setColumnWidth(0, 300);\n"
+"setColumnWidth(1, 400);\n"
+"}")
+        self.BosaBtnDescargarGrafica = QPushButton(self.BosaResultados)
+        self.BosaBtnDescargarGrafica.setObjectName(u"BosaBtnDescargarGrafica")
+        self.BosaBtnDescargarGrafica.setEnabled(True)
+        self.BosaBtnDescargarGrafica.setGeometry(QRect(880, 30, 180, 50))
+        sizePolicy8.setHeightForWidth(self.BosaBtnDescargarGrafica.sizePolicy().hasHeightForWidth())
+        self.BosaBtnDescargarGrafica.setSizePolicy(sizePolicy8)
+        self.BosaBtnDescargarGrafica.setMinimumSize(QSize(180, 50))
+        self.BosaBtnDescargarGrafica.setMaximumSize(QSize(160, 40))
+        self.BosaBtnDescargarGrafica.setStyleSheet(u"background-color: rgb(163, 160, 159);\n"
+"border-width: 5px;\n"
+"border-color: rgb(163, 160, 159);\n"
+"border-radius: 15px;\n"
+"color: rgb(255, 255, 255);\n"
+"font: 700 11pt \"Allerta\";\n"
+"\n"
+"")
+        self.BosaBtnDescargarGrafica.setCheckable(False)
+        self.BosaBtnDescargarGrafica.setChecked(False)
+        self.BosaBtnDescargarGrafica.setAutoDefault(False)
+        self.tabBosa.addTab(self.BosaResultados, "")
+        self.stackedWidget.addWidget(self.pagina_Bosa)
 
         self.verticalLayout_15.addWidget(self.stackedWidget)
 
@@ -1490,20 +1990,14 @@ class Ui_MainWindow(object):
         self.creditsLabel = QLabel(self.bottomBar)
         self.creditsLabel.setObjectName(u"creditsLabel")
         self.creditsLabel.setMaximumSize(QSize(16777215, 16))
-        font5 = QFont()
-        font5.setFamily(u"Segoe UI")
-        font5.setBold(False)
-        font5.setItalic(False)
-        self.creditsLabel.setFont(font5)
+        font4 = QFont()
+        font4.setFamilies([u"Segoe UI"])
+        font4.setBold(False)
+        font4.setItalic(False)
+        self.creditsLabel.setFont(font4)
         self.creditsLabel.setAlignment(Qt.AlignLeading|Qt.AlignLeft|Qt.AlignVCenter)
 
         self.horizontalLayout_5.addWidget(self.creditsLabel)
-
-        self.version = QLabel(self.bottomBar)
-        self.version.setObjectName(u"version")
-        self.version.setAlignment(Qt.AlignRight|Qt.AlignTrailing|Qt.AlignVCenter)
-
-        self.horizontalLayout_5.addWidget(self.version)
 
         self.frame_size_grip = QFrame(self.bottomBar)
         self.frame_size_grip.setObjectName(u"frame_size_grip")
@@ -1524,13 +2018,15 @@ class Ui_MainWindow(object):
         self.appLayout.addWidget(self.contentBox)
 
 
-        self.appMargins.addWidget(self.bgApp)
+        self.horizontalLayout_6.addWidget(self.bgApp)
 
         MainWindow.setCentralWidget(self.styleSheet)
 
         self.retranslateUi(MainWindow)
 
-        self.stackedWidget.setCurrentIndex(2)
+        self.stackedWidget.setCurrentIndex(1)
+        self.tabCantarrana.setCurrentIndex(0)
+        self.tabBosa.setCurrentIndex(0)
 
 
         QMetaObject.connectSlotsByName(MainWindow)
@@ -1538,15 +2034,14 @@ class Ui_MainWindow(object):
 
     def retranslateUi(self, MainWindow):
         MainWindow.setWindowTitle(QCoreApplication.translate("MainWindow", u"MainWindow", None))
-        self.titleLeftApp.setText(QCoreApplication.translate("MainWindow", u"PyDracula", None))
-        self.titleLeftDescription.setText(QCoreApplication.translate("MainWindow", u"Modern GUI / Flat Style", None))
+#if QT_CONFIG(tooltip)
+        self.topLogo.setToolTip("")
+#endif // QT_CONFIG(tooltip)
+        self.titleLeftApp.setText(QCoreApplication.translate("MainWindow", u"HidrApp Uniandes", None))
+        self.titleLeftDescription.setText(QCoreApplication.translate("MainWindow", u"Hidr\u00e1ulica de canales abiertos", None))
         self.toggleButton.setText(QCoreApplication.translate("MainWindow", u"Hide", None))
         self.btn_home.setText(QCoreApplication.translate("MainWindow", u"Home", None))
-        self.btn_widgets.setText(QCoreApplication.translate("MainWindow", u"Widgets", None))
         self.btn_new.setText(QCoreApplication.translate("MainWindow", u"New", None))
-        self.btn_save.setText(QCoreApplication.translate("MainWindow", u"Save", None))
-        self.btn_exit.setText(QCoreApplication.translate("MainWindow", u"Exit", None))
-        self.toggleLeftBox.setText(QCoreApplication.translate("MainWindow", u"Left Box", None))
         self.extraLabel.setText(QCoreApplication.translate("MainWindow", u"Left Box", None))
 #if QT_CONFIG(tooltip)
         self.extraCloseColumnBtn.setToolTip(QCoreApplication.translate("MainWindow", u"Close left box", None))
@@ -1558,22 +2053,21 @@ class Ui_MainWindow(object):
         self.textEdit.setHtml(QCoreApplication.translate("MainWindow", u"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><meta charset=\"utf-8\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
+"hr { height: 1px; border-width: 0; }\n"
+"li.unchecked::marker { content: \"\\2610\"; }\n"
+"li.checked::marker { content: \"\\2612\"; }\n"
 "</style></head><body style=\" font-family:'Segoe UI'; font-size:10pt; font-weight:400; font-style:normal;\">\n"
 "<p align=\"center\" style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:12pt; font-weight:600; color:#ff79c6;\">PyDracula</span></p>\n"
-"<p align=\"center\" style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" color:#ffffff;\">An interface created using Python and PySide (support for PyQt), and with colors based on the Dracula theme created by Zeno Rocha.</span></p>\n"
-"<p align=\"center\" style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-inde"
-                        "nt:0; text-indent:0px;\"><span style=\" color:#ffffff;\">MIT License</span></p>\n"
+"<p align=\"center\" style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" color:#ffffff;\">An interface created using Python and PySide (support for PyQt), and with colors based on the Dracula theme created by Zen"
+                        "o Rocha.</span></p>\n"
+"<p align=\"center\" style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" color:#ffffff;\">MIT License</span></p>\n"
 "<p align=\"center\" style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" color:#bd93f9;\">Created by: Wanderson M. Pimenta</span></p>\n"
 "<p align=\"center\" style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:12pt; font-weight:600; color:#ff79c6;\">Convert UI</span></p>\n"
 "<p align=\"center\" style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:9pt; color:#ffffff;\">pyside6-uic main.ui &gt; ui_main.py</span></p>\n"
-"<p align=\"center\" style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:12pt; font-weight:600; color:#ff79c6;\">Convert QRC</span></p>\n"
-"<p align=\"center\" "
-                        "style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:9pt; color:#ffffff;\">pyside6-rcc resources.qrc -o resources_rc.py</span></p></body></html>", None))
-        self.titleRightInfo.setText(QCoreApplication.translate("MainWindow", u"PyDracula APP - Theme with colors based on Dracula for Python.", None))
-#if QT_CONFIG(tooltip)
-        self.settingsTopBtn.setToolTip(QCoreApplication.translate("MainWindow", u"Settings", None))
-#endif // QT_CONFIG(tooltip)
-        self.settingsTopBtn.setText("")
+"<p align=\"center\" style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-in"
+                        "dent:0; text-indent:0px;\"><span style=\" font-size:12pt; font-weight:600; color:#ff79c6;\">Convert QRC</span></p>\n"
+"<p align=\"center\" style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:9pt; color:#ffffff;\">pyside6-rcc resources.qrc -o resources_rc.py</span></p></body></html>", None))
+        self.titleRightInfo.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p><span style=\" font-size:12pt;\">Estudio hidrol\u00f3gico de la cuenca del R\u00edo Tunjuelo</span></p></body></html>", None))
 #if QT_CONFIG(tooltip)
         self.minimizeAppBtn.setToolTip(QCoreApplication.translate("MainWindow", u"Minimize", None))
 #endif // QT_CONFIG(tooltip)
@@ -1586,77 +2080,238 @@ class Ui_MainWindow(object):
         self.closeAppBtn.setToolTip(QCoreApplication.translate("MainWindow", u"Close", None))
 #endif // QT_CONFIG(tooltip)
         self.closeAppBtn.setText("")
-        self.labelBoxBlenderInstalation.setText(QCoreApplication.translate("MainWindow", u"FILE BOX", None))
-        self.lineEdit.setText("")
-        self.lineEdit.setPlaceholderText(QCoreApplication.translate("MainWindow", u"Type here", None))
-        self.pushButton.setText(QCoreApplication.translate("MainWindow", u"Open", None))
-        self.labelVersion_3.setText(QCoreApplication.translate("MainWindow", u"Label description", None))
-        self.checkBox.setText(QCoreApplication.translate("MainWindow", u"CheckBox", None))
-        self.radioButton.setText(QCoreApplication.translate("MainWindow", u"RadioButton", None))
-        self.comboBox.setItemText(0, QCoreApplication.translate("MainWindow", u"Test 1", None))
-        self.comboBox.setItemText(1, QCoreApplication.translate("MainWindow", u"Test 2", None))
-        self.comboBox.setItemText(2, QCoreApplication.translate("MainWindow", u"Test 3", None))
+#if QT_CONFIG(tooltip)
+        self.txtCantarrana.setToolTip(QCoreApplication.translate("MainWindow", u"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><meta charset=\"utf-8\" /><style type=\"text/css\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Allerta'; font-size:18pt; font-weight:500; font-style:normal;\">\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:30px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p></body></html>", None))
+#endif // QT_CONFIG(tooltip)
+#if QT_CONFIG(whatsthis)
+        self.txtCantarrana.setWhatsThis("")
+#endif // QT_CONFIG(whatsthis)
+        self.txtCantarrana.setPlainText("")
+        self.botonMenuCantarrana.setText(QCoreApplication.translate("MainWindow", u"Estaci\u00f3n \n"
+" Cantarrana", None))
+#if QT_CONFIG(tooltip)
+        self.txtBosa.setToolTip(QCoreApplication.translate("MainWindow", u"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><meta charset=\"utf-8\" /><style type=\"text/css\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Allerta'; font-size:18pt; font-weight:500; font-style:normal;\">\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:30px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p></body></html>", None))
+#endif // QT_CONFIG(tooltip)
+#if QT_CONFIG(whatsthis)
+        self.txtBosa.setWhatsThis("")
+#endif // QT_CONFIG(whatsthis)
+        self.txtBosa.setPlainText("")
+        self.botonMenuBosa.setText(QCoreApplication.translate("MainWindow", u"Estaci\u00f3n \n"
+" Puente Bosa", None))
+        self.CantarranaBtnLbl_3.setText(QCoreApplication.translate("MainWindow", u"Latitud: 4\u00b029' \n"
+"\n"
+"Longitud: 74\u00b007' \n"
+" \n"
+"Entidad: EAAB \n"
+"\n"
+"Per\u00edodo: 1958", None))
+        self.CantarranaBtnLbl_4.setText(QCoreApplication.translate("MainWindow", u"Latitud: 4\u00b037' \n"
+"\n"
+"Longitud: 74\u00b016' \n"
+" \n"
+"Entidad: EAAB \n"
+"\n"
+"Per\u00edodo: 1970", None))
+#if QT_CONFIG(tooltip)
+        self.EstacionLbl_13.setToolTip("")
+#endif // QT_CONFIG(tooltip)
+#if QT_CONFIG(whatsthis)
+        self.EstacionLbl_13.setWhatsThis(QCoreApplication.translate("MainWindow", u"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><meta charset=\"utf-8\" /><style type=\"text/css\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Allerta'; font-size:12pt; font-weight:650; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"> </p></body></html>", None))
+#endif // QT_CONFIG(whatsthis)
+        self.EstacionLbl_13.setText("")
+        self.EstacionLbl_13.setPlaceholderText("")
+#if QT_CONFIG(tooltip)
+        self.EstacionLbl_14.setToolTip("")
+#endif // QT_CONFIG(tooltip)
+#if QT_CONFIG(whatsthis)
+        self.EstacionLbl_14.setWhatsThis(QCoreApplication.translate("MainWindow", u"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><meta charset=\"utf-8\" /><style type=\"text/css\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Allerta'; font-size:12pt; font-weight:650; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"> </p></body></html>", None))
+#endif // QT_CONFIG(whatsthis)
+        self.EstacionLbl_14.setText("")
+        self.EstacionLbl_14.setPlaceholderText("")
+        self.CantarranaBtnLbl_7.setText(QCoreApplication.translate("MainWindow", u"MENU PRINCIPAL", None))
+#if QT_CONFIG(tooltip)
+        self.EstacionLbl.setToolTip("")
+#endif // QT_CONFIG(tooltip)
+#if QT_CONFIG(whatsthis)
+        self.EstacionLbl.setWhatsThis(QCoreApplication.translate("MainWindow", u"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><meta charset=\"utf-8\" /><style type=\"text/css\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Allerta'; font-size:12pt; font-weight:650; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"> </p></body></html>", None))
+#endif // QT_CONFIG(whatsthis)
+        self.EstacionLbl.setText("")
+        self.EstacionLbl.setPlaceholderText("")
+        self.EstacionLbl_5.setText(QCoreApplication.translate("MainWindow", u"ESTACI\u00d3N CANTARRANA", None))
+#if QT_CONFIG(tooltip)
+        self.EstacionLbl_2.setToolTip("")
+#endif // QT_CONFIG(tooltip)
+#if QT_CONFIG(whatsthis)
+        self.EstacionLbl_2.setWhatsThis(QCoreApplication.translate("MainWindow", u"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><meta charset=\"utf-8\" /><style type=\"text/css\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Allerta'; font-size:12pt; font-weight:650; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"> </p></body></html>", None))
+#endif // QT_CONFIG(whatsthis)
+        self.EstacionLbl_2.setText("")
+        self.EstacionLbl_2.setPlaceholderText("")
+        self.groupBox_Propiedades_45.setTitle(QCoreApplication.translate("MainWindow", u"Criterios", None))
+        self.CantarranaBtnLbl_2.setText(QCoreApplication.translate("MainWindow", u"N\u00famero de intervalos de frecuencia", None))
+        self.CantarranaBtnLbl.setText(QCoreApplication.translate("MainWindow", u"Nivel de agregaci\u00f3n", None))
+#if QT_CONFIG(whatsthis)
+        self.CantarranaComboBoxIntervalo.setWhatsThis("")
+#endif // QT_CONFIG(whatsthis)
+        self.CantarranaComboBoxIntervalo.setText("")
+        self.CantarranaComboBoxIntervalo.setPlaceholderText("")
+        self.CantarranaComboBoxNivel.setItemText(0, QCoreApplication.translate("MainWindow", u"Diario", None))
+        self.CantarranaComboBoxNivel.setItemText(1, QCoreApplication.translate("MainWindow", u"Semanal", None))
+        self.CantarranaComboBoxNivel.setItemText(2, QCoreApplication.translate("MainWindow", u"Decadal", None))
+        self.CantarranaComboBoxNivel.setItemText(3, QCoreApplication.translate("MainWindow", u"Quincenal", None))
+        self.CantarranaComboBoxNivel.setItemText(4, QCoreApplication.translate("MainWindow", u"Mensual", None))
 
-        self.commandLinkButton.setText(QCoreApplication.translate("MainWindow", u"Link Button", None))
-        self.commandLinkButton.setDescription(QCoreApplication.translate("MainWindow", u"Link description", None))
-        ___qtablewidgetitem = self.tableWidget.horizontalHeaderItem(0)
-        ___qtablewidgetitem.setText(QCoreApplication.translate("MainWindow", u"0", None));
-        ___qtablewidgetitem1 = self.tableWidget.horizontalHeaderItem(1)
-        ___qtablewidgetitem1.setText(QCoreApplication.translate("MainWindow", u"1", None));
-        ___qtablewidgetitem2 = self.tableWidget.horizontalHeaderItem(2)
-        ___qtablewidgetitem2.setText(QCoreApplication.translate("MainWindow", u"2", None));
-        ___qtablewidgetitem3 = self.tableWidget.horizontalHeaderItem(3)
-        ___qtablewidgetitem3.setText(QCoreApplication.translate("MainWindow", u"3", None));
-        ___qtablewidgetitem4 = self.tableWidget.verticalHeaderItem(0)
-        ___qtablewidgetitem4.setText(QCoreApplication.translate("MainWindow", u"New Row", None));
-        ___qtablewidgetitem5 = self.tableWidget.verticalHeaderItem(1)
-        ___qtablewidgetitem5.setText(QCoreApplication.translate("MainWindow", u"New Row", None));
-        ___qtablewidgetitem6 = self.tableWidget.verticalHeaderItem(2)
-        ___qtablewidgetitem6.setText(QCoreApplication.translate("MainWindow", u"New Row", None));
-        ___qtablewidgetitem7 = self.tableWidget.verticalHeaderItem(3)
-        ___qtablewidgetitem7.setText(QCoreApplication.translate("MainWindow", u"New Row", None));
-        ___qtablewidgetitem8 = self.tableWidget.verticalHeaderItem(4)
-        ___qtablewidgetitem8.setText(QCoreApplication.translate("MainWindow", u"New Row", None));
-        ___qtablewidgetitem9 = self.tableWidget.verticalHeaderItem(5)
-        ___qtablewidgetitem9.setText(QCoreApplication.translate("MainWindow", u"New Row", None));
-        ___qtablewidgetitem10 = self.tableWidget.verticalHeaderItem(6)
-        ___qtablewidgetitem10.setText(QCoreApplication.translate("MainWindow", u"New Row", None));
-        ___qtablewidgetitem11 = self.tableWidget.verticalHeaderItem(7)
-        ___qtablewidgetitem11.setText(QCoreApplication.translate("MainWindow", u"New Row", None));
-        ___qtablewidgetitem12 = self.tableWidget.verticalHeaderItem(8)
-        ___qtablewidgetitem12.setText(QCoreApplication.translate("MainWindow", u"New Row", None));
-        ___qtablewidgetitem13 = self.tableWidget.verticalHeaderItem(9)
-        ___qtablewidgetitem13.setText(QCoreApplication.translate("MainWindow", u"New Row", None));
-        ___qtablewidgetitem14 = self.tableWidget.verticalHeaderItem(10)
-        ___qtablewidgetitem14.setText(QCoreApplication.translate("MainWindow", u"New Row", None));
-        ___qtablewidgetitem15 = self.tableWidget.verticalHeaderItem(11)
-        ___qtablewidgetitem15.setText(QCoreApplication.translate("MainWindow", u"New Row", None));
-        ___qtablewidgetitem16 = self.tableWidget.verticalHeaderItem(12)
-        ___qtablewidgetitem16.setText(QCoreApplication.translate("MainWindow", u"New Row", None));
-        ___qtablewidgetitem17 = self.tableWidget.verticalHeaderItem(13)
-        ___qtablewidgetitem17.setText(QCoreApplication.translate("MainWindow", u"New Row", None));
-        ___qtablewidgetitem18 = self.tableWidget.verticalHeaderItem(14)
-        ___qtablewidgetitem18.setText(QCoreApplication.translate("MainWindow", u"New Row", None));
-        ___qtablewidgetitem19 = self.tableWidget.verticalHeaderItem(15)
-        ___qtablewidgetitem19.setText(QCoreApplication.translate("MainWindow", u"New Row", None));
+        self.CantarranaComboBoxNivel.setCurrentText(QCoreApplication.translate("MainWindow", u"Diario", None))
+        self.CantarranaBtnCalcular.setText("")
+        self.CantarranaLblCalcular.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p>Calcular</p></body></html>", None))
+        self.CantarranaGrafica.setText("")
+#if QT_CONFIG(tooltip)
+        self.EstacionLbl_3.setToolTip("")
+#endif // QT_CONFIG(tooltip)
+#if QT_CONFIG(whatsthis)
+        self.EstacionLbl_3.setWhatsThis(QCoreApplication.translate("MainWindow", u"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><meta charset=\"utf-8\" /><style type=\"text/css\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Allerta'; font-size:12pt; font-weight:650; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"> </p></body></html>", None))
+#endif // QT_CONFIG(whatsthis)
+        self.EstacionLbl_3.setText("")
+        self.EstacionLbl_3.setPlaceholderText("")
+        self.EstacionLbl_6.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p>Estad\u00edsticas</p></body></html>", None))
+#if QT_CONFIG(tooltip)
+        self.EstacionLbl_4.setToolTip("")
+#endif // QT_CONFIG(tooltip)
+#if QT_CONFIG(whatsthis)
+        self.EstacionLbl_4.setWhatsThis(QCoreApplication.translate("MainWindow", u"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><meta charset=\"utf-8\" /><style type=\"text/css\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Allerta'; font-size:12pt; font-weight:650; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"> </p></body></html>", None))
+#endif // QT_CONFIG(whatsthis)
+        self.EstacionLbl_4.setText("")
+        self.EstacionLbl_4.setPlaceholderText("")
+        self.CantarranaFieldMinimo.setText("")
+        self.CantarranaFieldMaximo.setText("")
+        self.CantarranaFieldRango.setText("")
+        self.CantarranaFieldAmplitud.setText("")
+        self.CantarranaFieldDatos.setText("")
+        self.CantarranaLblMinimo.setText(QCoreApplication.translate("MainWindow", u"M\u00ednimo", None))
+        self.CantarranaLblMaximo.setText(QCoreApplication.translate("MainWindow", u"M\u00e1ximo", None))
+        self.CantarranaLblRango.setText(QCoreApplication.translate("MainWindow", u"Rango", None))
+        self.CantarranaLblAmplitud.setText(QCoreApplication.translate("MainWindow", u"Amplitud", None))
+        self.CantarranaLblDatos.setText(QCoreApplication.translate("MainWindow", u"N\u00famero de datos", None))
+        self.tabCantarrana.setTabText(self.tabCantarrana.indexOf(self.CantarranaEntrada), QCoreApplication.translate("MainWindow", u"Entrada", None))
+        self.CantarranaBtnDescargarGrafica.setText(QCoreApplication.translate("MainWindow", u"Descargar \n"
+" tabla", None))
+        self.tabCantarrana.setTabText(self.tabCantarrana.indexOf(self.CantarranaResultados), QCoreApplication.translate("MainWindow", u"Resultados", None))
+#if QT_CONFIG(tooltip)
+        self.EstacionLbl_7.setToolTip("")
+#endif // QT_CONFIG(tooltip)
+#if QT_CONFIG(whatsthis)
+        self.EstacionLbl_7.setWhatsThis(QCoreApplication.translate("MainWindow", u"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><meta charset=\"utf-8\" /><style type=\"text/css\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Allerta'; font-size:12pt; font-weight:650; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"> </p></body></html>", None))
+#endif // QT_CONFIG(whatsthis)
+        self.EstacionLbl_7.setText("")
+        self.EstacionLbl_7.setPlaceholderText("")
+        self.EstacionLbl_8.setText(QCoreApplication.translate("MainWindow", u"ESTACI\u00d3N PUENTE BOSA", None))
+#if QT_CONFIG(tooltip)
+        self.EstacionLbl_9.setToolTip("")
+#endif // QT_CONFIG(tooltip)
+#if QT_CONFIG(whatsthis)
+        self.EstacionLbl_9.setWhatsThis(QCoreApplication.translate("MainWindow", u"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><meta charset=\"utf-8\" /><style type=\"text/css\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Allerta'; font-size:12pt; font-weight:650; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"> </p></body></html>", None))
+#endif // QT_CONFIG(whatsthis)
+        self.EstacionLbl_9.setText("")
+        self.EstacionLbl_9.setPlaceholderText("")
+        self.groupBox_Propiedades_46.setTitle(QCoreApplication.translate("MainWindow", u"Criterios", None))
+        self.CantarranaBtnLbl_5.setText(QCoreApplication.translate("MainWindow", u"N\u00famero de intervalos de frecuencia", None))
+        self.CantarranaBtnLbl_6.setText(QCoreApplication.translate("MainWindow", u"Nivel de agregaci\u00f3n", None))
+#if QT_CONFIG(whatsthis)
+        self.BosaComboBoxIntervalo.setWhatsThis("")
+#endif // QT_CONFIG(whatsthis)
+        self.BosaComboBoxIntervalo.setText("")
+        self.BosaComboBoxIntervalo.setPlaceholderText("")
+        self.BosaComboBoxNivel.setItemText(0, QCoreApplication.translate("MainWindow", u"Diario", None))
+        self.BosaComboBoxNivel.setItemText(1, QCoreApplication.translate("MainWindow", u"Semanal", None))
+        self.BosaComboBoxNivel.setItemText(2, QCoreApplication.translate("MainWindow", u"Decadal", None))
+        self.BosaComboBoxNivel.setItemText(3, QCoreApplication.translate("MainWindow", u"Quincenal", None))
+        self.BosaComboBoxNivel.setItemText(4, QCoreApplication.translate("MainWindow", u"Mensual", None))
 
-        __sortingEnabled = self.tableWidget.isSortingEnabled()
-        self.tableWidget.setSortingEnabled(False)
-        ___qtablewidgetitem20 = self.tableWidget.item(0, 0)
-        ___qtablewidgetitem20.setText(QCoreApplication.translate("MainWindow", u"Test", None));
-        ___qtablewidgetitem21 = self.tableWidget.item(0, 1)
-        ___qtablewidgetitem21.setText(QCoreApplication.translate("MainWindow", u"Text", None));
-        ___qtablewidgetitem22 = self.tableWidget.item(0, 2)
-        ___qtablewidgetitem22.setText(QCoreApplication.translate("MainWindow", u"Cell", None));
-        ___qtablewidgetitem23 = self.tableWidget.item(0, 3)
-        ___qtablewidgetitem23.setText(QCoreApplication.translate("MainWindow", u"Line", None));
-        self.tableWidget.setSortingEnabled(__sortingEnabled)
-
-        self.label.setText(QCoreApplication.translate("MainWindow", u"NEW PAGE TEST", None))
+        self.BosaComboBoxNivel.setCurrentText(QCoreApplication.translate("MainWindow", u"Diario", None))
+        self.BosaBtnCalcular.setText("")
+        self.BosaLblCalcular.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p>Calcular</p></body></html>", None))
+#if QT_CONFIG(tooltip)
+        self.EstacionLbl_10.setToolTip("")
+#endif // QT_CONFIG(tooltip)
+#if QT_CONFIG(whatsthis)
+        self.EstacionLbl_10.setWhatsThis(QCoreApplication.translate("MainWindow", u"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><meta charset=\"utf-8\" /><style type=\"text/css\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Allerta'; font-size:12pt; font-weight:650; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"> </p></body></html>", None))
+#endif // QT_CONFIG(whatsthis)
+        self.EstacionLbl_10.setText("")
+        self.EstacionLbl_10.setPlaceholderText("")
+        self.EstacionLbl_11.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p>Estad\u00edsticas</p></body></html>", None))
+#if QT_CONFIG(tooltip)
+        self.EstacionLbl_12.setToolTip("")
+#endif // QT_CONFIG(tooltip)
+#if QT_CONFIG(whatsthis)
+        self.EstacionLbl_12.setWhatsThis(QCoreApplication.translate("MainWindow", u"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><meta charset=\"utf-8\" /><style type=\"text/css\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Allerta'; font-size:12pt; font-weight:650; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"> </p></body></html>", None))
+#endif // QT_CONFIG(whatsthis)
+        self.EstacionLbl_12.setText("")
+        self.EstacionLbl_12.setPlaceholderText("")
+        self.BosaFieldMinimo.setText("")
+        self.BosaFieldMaximo.setText("")
+        self.BosaFieldRango.setText("")
+        self.BosaFieldAmplitud.setText("")
+        self.BosaFieldDatos.setText("")
+        self.CantarranaLblMinimo_3.setText(QCoreApplication.translate("MainWindow", u"M\u00ednimo", None))
+        self.CantarranaLblMaximo_3.setText(QCoreApplication.translate("MainWindow", u"M\u00e1ximo", None))
+        self.CantarranaLblRango_3.setText(QCoreApplication.translate("MainWindow", u"Rango", None))
+        self.CantarranaLblAmplitud_3.setText(QCoreApplication.translate("MainWindow", u"Amplitud", None))
+        self.CantarranaLblDatos_3.setText(QCoreApplication.translate("MainWindow", u"N\u00famero de datos", None))
+        self.BosaGrafica.setText("")
+        self.tabBosa.setTabText(self.tabBosa.indexOf(self.BosaEntrada), QCoreApplication.translate("MainWindow", u"Entrada", None))
+        self.BosaBtnDescargarGrafica.setText(QCoreApplication.translate("MainWindow", u"Descargar \n"
+" gr\u00e1fica", None))
+        self.tabBosa.setTabText(self.tabBosa.indexOf(self.BosaResultados), QCoreApplication.translate("MainWindow", u"Resultados", None))
         self.btn_message.setText(QCoreApplication.translate("MainWindow", u"Message", None))
         self.btn_print.setText(QCoreApplication.translate("MainWindow", u"Print", None))
         self.btn_logout.setText(QCoreApplication.translate("MainWindow", u"Logout", None))
-        self.creditsLabel.setText(QCoreApplication.translate("MainWindow", u"By: Wanderson M. Pimenta", None))
-        self.version.setText(QCoreApplication.translate("MainWindow", u"v1.0.3", None))
+        self.creditsLabel.setText(QCoreApplication.translate("MainWindow", u"Universidad de los Andes - 2022", None))
     # retranslateUi
 
