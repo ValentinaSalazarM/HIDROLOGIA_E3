@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'mainWKYRui.ui'
+## Form generated from reading UI file 'mainOpNlTC.ui'
 ##
 ## Created by: Qt User Interface Compiler version 6.4.1
 ##
@@ -2029,7 +2029,7 @@ class Ui_MainWindow(object):
 
         self.retranslateUi(MainWindow)
 
-        self.stackedWidget.setCurrentIndex(3)
+        self.stackedWidget.setCurrentIndex(1)
         self.tabCantarrana.setCurrentIndex(0)
         self.tabBosa.setCurrentIndex(0)
 
@@ -2312,7 +2312,7 @@ class Ui_MainWindow(object):
         self.BosaGrafica.setText("")
         self.tabBosa.setTabText(self.tabBosa.indexOf(self.BosaEntrada), QCoreApplication.translate("MainWindow", u"Entrada", None))
         self.BosaBtnDescargarGrafica.setText(QCoreApplication.translate("MainWindow", u"Descargar \n"
-" gr\u00e1fica", None))
+" tabla", None))
         self.tabBosa.setTabText(self.tabBosa.indexOf(self.BosaResultados), QCoreApplication.translate("MainWindow", u"Resultados", None))
         self.btn_message.setText(QCoreApplication.translate("MainWindow", u"Message", None))
         self.btn_print.setText(QCoreApplication.translate("MainWindow", u"Print", None))

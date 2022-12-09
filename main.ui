@@ -1710,7 +1710,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
                       <number>-2</number>
                      </property>
                      <property name="currentIndex">
-                      <number>3</number>
+                      <number>1</number>
                      </property>
                      <widget class="QWidget" name="home">
                       <property name="styleSheet">
@@ -4108,7 +4108,7 @@ font: 700 11pt &quot;Allerta&quot;;
                          </property>
                          <property name="text">
                           <string>Descargar 
- gráfica</string>
+ tabla</string>
                          </property>
                          <property name="checkable">
                           <bool>false</bool>
